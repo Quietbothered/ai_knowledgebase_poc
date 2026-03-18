@@ -19,6 +19,9 @@ def test_settings_from_env_reads_values_from_dotenv_file(tmp_path: Path) -> None
                 "LOG_LEVEL=DEBUG",
                 "LOG_DIR=app/logs",
                 "LOG_FILE_NAME=test.log",
+                "AUTO_INGESTION_ENABLED=true",
+                "AUTO_INGESTION_INTERVAL_SECONDS=900",
+                "AUTO_INGESTION_MODE=incremental",
             ]
         ),
         encoding="utf-8",
@@ -31,3 +34,6 @@ def test_settings_from_env_reads_values_from_dotenv_file(tmp_path: Path) -> None
     assert settings.log_level == "DEBUG"
     assert settings.log_dir == "app/logs"
     assert settings.log_file_name == "test.log"
+    assert settings.auto_ingestion_enabled is True
+    assert settings.auto_ingestion_interval_seconds == 900
+    assert settings.auto_ingestion_mode == "incremental"

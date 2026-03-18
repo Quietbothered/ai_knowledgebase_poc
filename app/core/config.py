@@ -19,6 +19,9 @@ class Settings(BaseModel):
     log_level: str = Field(default="INFO")
     log_dir: str = Field(default="app/logs")
     log_file_name: str = Field(default="app.log")
+    auto_ingestion_enabled: bool = Field(default=False)
+    auto_ingestion_interval_seconds: int = Field(default=900, ge=1)
+    auto_ingestion_mode: str = Field(default="incremental")
 
     @classmethod
     def from_env(cls, search_path: Path | str | None = None) -> "Settings":
@@ -53,6 +56,21 @@ class Settings(BaseModel):
                 default=os.getenv("LOG_FILE_NAME", "app.log"),
                 cast=str,
             ),
+            auto_ingestion_enabled=decouple_config(
+                "AUTO_INGESTION_ENABLED",
+                default=os.getenv("AUTO_INGESTION_ENABLED", "false"),
+                cast=bool,
+            ),
+            auto_ingestion_interval_seconds=decouple_config(
+                "AUTO_INGESTION_INTERVAL_SECONDS",
+                default=os.getenv("AUTO_INGESTION_INTERVAL_SECONDS", "900"),
+                cast=int,
+            ),
+            auto_ingestion_mode=decouple_config(
+                "AUTO_INGESTION_MODE",
+                default=os.getenv("AUTO_INGESTION_MODE", "incremental"),
+                cast=str,
+            ).lower(),
         )
 
 

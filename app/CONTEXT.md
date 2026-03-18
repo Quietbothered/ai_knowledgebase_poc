@@ -13,7 +13,7 @@ Own package-level wiring and application entry point.
 | --- | --- | --- | --- |
 | `CONTEXT.md` | Root context and change tracking | `docs/AGENTS.md` | Active |
 | `__init__.py` | App package marker | Python runtime | Active |
-| `main.py` | FastAPI app factory and router mounting | `app/api/query_api.py`, `app/core/config.py` | Active |
+| `main.py` | FastAPI app factory, router mounting, and lifespan-based runtime lifecycle | `app/api/query_api.py`, `app/core/config.py`, `app/ingestion/automation.py` | Active |
 | `logs/.gitkeep` | Keeps runtime log directory tracked in repository | Git | Active |
 | `../.env` | Root environment variable file consumed by decouple config | `app/core/config.py` | Active |
 | `../.gitignore` | Root ignore policy for runtime/build artifacts | Git | Active |
@@ -24,6 +24,8 @@ Authentication is intentionally deferred. Implement auth only after explicit use
 ## Change Log
 | Date | Change | Files | Notes |
 | --- | --- | --- | --- |
+| 2026-03-18 | Migrated app lifecycle hooks to FastAPI lifespan handlers | `main.py` | Replaced deprecated `on_event` usage with lifespan startup/shutdown runtime control |
+| 2026-03-18 | Added app startup/shutdown lifecycle for auto-ingestion runtime | `main.py` | Wired auto-ingestion scheduler start/stop with config-based mode resolution |
 | 2026-03-18 | Added repository tracking and environment files at root | `../.env`, `../.gitignore` | Added default env configuration and git hygiene for tracked development |
 | 2026-03-18 | Added runtime log directory tracking | `logs/.gitkeep` | Established `app/logs` as the log output directory |
 | 2026-03-18 | Added initial app root scaffold tracker | `CONTEXT.md`, `__init__.py`, `main.py` | Established package bootstrap and app factory wiring |

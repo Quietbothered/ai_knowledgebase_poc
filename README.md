@@ -37,7 +37,7 @@ citations from matched chunks.
 - `app/commands/` business logic via command classes
 - `app/rag/` retrieval and context assembly components
 - `app/ingestion/` connector and ingestion placeholders
-- `app/ingestion/` connectors and indexing pipeline orchestration
+- `app/ingestion/` connectors, indexing pipeline orchestration, and auto-scheduler runtime
 - `app/logs/` runtime JSON log files
 - `app/models/` shared Pydantic models and enums
 - `app/core/` configuration and centralized logging
@@ -89,6 +89,9 @@ Current keys:
 - `LOG_LEVEL`
 - `LOG_DIR`
 - `LOG_FILE_NAME`
+- `AUTO_INGESTION_ENABLED` (`true`/`false`)
+- `AUTO_INGESTION_INTERVAL_SECONDS` (poll interval in seconds)
+- `AUTO_INGESTION_MODE` (`full` or `incremental`)
 
 ## Ingestion Indexing Pipeline (Chunking + Index Command Flow)
 
@@ -97,6 +100,11 @@ The ingestion pipeline currently runs deterministic seed connector data and exec
 2. Chunk generation (`ChunkDocumentCommand`)
 3. Index upsert (`IndexChunksCommand`)
 4. Flow summary (`RunIngestionIndexingCommand`)
+
+Automatic ingestion:
+- Scheduler is created in FastAPI lifespan startup.
+- It runs only when `AUTO_INGESTION_ENABLED=true`.
+- First run happens on startup, then repeats every `AUTO_INGESTION_INTERVAL_SECONDS`.
 
 Run it manually:
 

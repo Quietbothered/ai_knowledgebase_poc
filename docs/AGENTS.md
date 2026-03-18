@@ -317,6 +317,42 @@ Codex MUST enforce:
 
 ---
 
+## 6.11 Deprecation Guardrails (STRICT)
+
+Codex MUST NOT use deprecated APIs, decorators, classes, config keys, or helper functions from FastAPI or any other dependency.
+
+If an API is deprecated:
+
+* use the supported replacement immediately
+* do not add new code on top of deprecated patterns
+
+### FastAPI Rule
+
+❌ Do not use deprecated lifecycle decorators such as:
+
+```python
+@app.on_event("startup")
+@app.on_event("shutdown")
+```
+
+✅ Use lifespan handlers instead.
+
+### Refactor Rule
+
+If existing code contains deprecated APIs and related code is being changed:
+
+* refactor deprecated usage as part of the same change
+* do not leave newly touched deprecated code behind
+
+### Verification Rule
+
+Deprecation warnings are blockers:
+
+* no newly introduced deprecation warnings allowed
+* task is incomplete until deprecations introduced by the change are removed
+
+---
+
 # 7. Dependency Rules
 
 Allowed:
