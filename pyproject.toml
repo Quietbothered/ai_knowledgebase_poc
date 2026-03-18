@@ -1,0 +1,25 @@
+[project]
+name = "knowledgebase-project"
+version = "0.1.0"
+description = "Internal Knowledge Assistant backend scaffold"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.116.0,<1.0.0",
+    "pydantic>=2.9.0,<3.0.0",
+    "python-decouple>=3.8,<4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0,<9.0.0",
+    "httpx>=0.28.0,<1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
