@@ -6,6 +6,9 @@ __pycache__/
 .venv/
 venv/
 
+# Environment files
+.env
+
 # Test/cache artifacts
 .pytest_cache/
 

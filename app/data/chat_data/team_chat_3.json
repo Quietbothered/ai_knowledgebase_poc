@@ -1,0 +1,1989 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/messages",
+  "@odata.count": 50,
+  "value": [
+    {
+      "id": "1710685500101",
+      "replyToId": null,
+      "etag": "1710685500101",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T13:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T13:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500101",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@channel We have an immediate issue with the Globex Retail test.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500102",
+      "replyToId": null,
+      "etag": "1710685500102",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T13:47:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T13:47:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500102",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Did the authentication fail?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500103",
+      "replyToId": null,
+      "etag": "1710685500103",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T13:48:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T13:48:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500103",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Yes. The user is receiving an assertion has expired error upon redirect.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500104",
+      "replyToId": null,
+      "etag": "1710685500104",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T13:51:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T13:51:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500104",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>That indicates a clock skew issue between their internal Active Directory server and Auth0's servers.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500105",
+      "replyToId": null,
+      "etag": "1710685500105",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T13:54:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T13:54:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500105",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Exactly. I checked the SAML response payload. The NotBefore value is 2026-03-17T13:58:19.253Z and the NotOnOrAfter is 2026-03-17T14:58:19.253Z. However, the IssueInstant generated by their IdP is falling entirely outside that permitted time range.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500106",
+      "replyToId": null,
+      "etag": "1710685500106",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T13:56:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T13:56:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500106",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Their internal enterprise server clock is out of sync by over four minutes.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500107",
+      "replyToId": null,
+      "etag": "1710685500107",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500107",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>We have two options: either Globex IT resyncs their IdP system clock using NTP, or we configure a clock drift/skew delay parameter within Auth0's security policies to tolerate the mismatch.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500108",
+      "replyToId": null,
+      "etag": "1710685500108",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500108",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Do not ask their IT department to fix their own servers. It creates friction during the procurement phase. We need to handle this silently on our end.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500109",
+      "replyToId": null,
+      "etag": "1710685500109",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:10:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:10:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500109",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I can configure a 300-second clock skew tolerance. However, implementing and testing this requires overriding default Auth0 security profiles. It will take the rest of the day.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500110",
+      "replyToId": null,
+      "etag": "1710685500110",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500110",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>That's fine. Update the Terraform state with the `allowed_clock_skew` parameter and apply it to the staging tenant.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500111",
+      "replyToId": null,
+      "etag": "1710685500111",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:25:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:25:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500111",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>We have a secondary, much larger issue. Globex IT just emailed me their directory synchronization documentation. They utilize a highly customized, legacy Identity Provider that does not strictly adhere to SCIM 2.0 outbound provisioning protocols.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500112",
+      "replyToId": null,
+      "etag": "1710685500112",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500112",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>If they don't support standard SCIM 2.0, Auth0 cannot natively ingest their user provisioning requests. We will have to build a custom webhook middleware layer to receive their proprietary payloads, transform the data, and push it to the Auth0 Management API.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500113",
+      "replyToId": null,
+      "etag": "1710685500113",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:33:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:33:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500113",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>How long will building custom middleware take?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500114",
+      "replyToId": null,
+      "etag": "1710685500114",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:36:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:36:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500114",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>At minimum, four days of dedicated development, plus rigorous security testing to ensure we aren't introducing injection vulnerabilities via the transformation logic.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500115",
+      "replyToId": null,
+      "etag": "1710685500115",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500115",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@mark-torres @sarah-jenkins [Project Update] Due to the proprietary nature of the client's IdP requiring custom middleware development, the Phase 2 IAM Migration milestone will be delayed by four business days.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [
+        {
+          "id": 0,
+          "mentionText": "mark-torres",
+          "mentioned": {
+            "application": null,
+            "device": null,
+            "conversation": null,
+            "user": {
+              "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+              "id": "uid-mark-007",
+              "displayName": "Mark Torres",
+              "userIdentityType": "aadUser",
+              "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "mentionText": "sarah-jenkins",
+          "mentioned": {
+            "application": null,
+            "device": null,
+            "conversation": null,
+            "user": {
+              "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+              "id": "uid-sarah-001",
+              "displayName": "Sarah Jenkins",
+              "userIdentityType": "aadUser",
+              "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+            }
+          }
+        }
+      ],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500116",
+      "replyToId": null,
+      "etag": "1710685500116",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:52:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:52:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500116",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>This is highly problematic. We committed to Globex that the integration would be finalized by Friday. Can we parallel track the middleware while pushing the SAML to production?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500117",
+      "replyToId": null,
+      "etag": "1710685500117",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T14:58:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T14:58:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500117",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Sarah, I understand the commercial pressure, but rushing custom identity middleware introduces severe security vulnerabilities. We cannot compromise the authentication pipeline just to meet a soft deadline. If the middleware fails, user data could be corrupted or exposed.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500118",
+      "replyToId": null,
+      "etag": "1710685500118",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T15:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T15:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500118",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>However, to mitigate the overall timeline impact, I am utilizing our built-in \"slack time\" (float) allocated for Phase 3. I am reallocating James and Marcus to begin the Database Restructuring phase immediately, four days early, while Chloe finalizes the custom middleware. The overall 24-week project end-date remains completely unthreatened.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500119",
+      "replyToId": null,
+      "etag": "1710685500119",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T15:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T15:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500119",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>That is a solid pivot, Elena. I will communicate the delay to Globex. If I frame it as \"custom engineering required to securely integrate with their bespoke legacy systems,\" it actually positions us as providing white-glove enterprise service, rather than a delay.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500120",
+      "replyToId": null,
+      "etag": "1710685500120",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T15:20:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T15:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500120",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Exactly. It is a technical necessity that demonstrates our commitment to their specific infrastructure. Let's execute.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500121",
+      "replyToId": null,
+      "etag": "1710685500121",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T15:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T15:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500121",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>User @chloe-kim created a new branch: feat/custom-scim-middleware-globex</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500122",
+      "replyToId": null,
+      "etag": "1710685500122",
+      "messageType": "message",
+      "createdDateTime": "2026-03-17T16:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-17T16:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500122",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I am writing the transformation logic now. It looks like their IdP sends nested groups in a non-standard XML schema wrapped inside JSON.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500123",
+      "replyToId": null,
+      "etag": "1710685500123",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500123",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>James, since we started Phase 3 early, let's finalize the Drizzle migration strategy.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500124",
+      "replyToId": null,
+      "etag": "1710685500124",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500124",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Yes. We need to implement the \"Separate Database Schemas per Tenant\" model. I am writing a Node.js service that fetches all active tenant IDs from the core database and dynamically creates a dedicated PostgreSQL schema for each using CREATE SCHEMA IF NOT EXISTS.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500125",
+      "replyToId": null,
+      "etag": "1710685500125",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500125",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>How are you handling the actual Drizzle migrations for hundreds of schemas simultaneously? In the past, running drizzle-kit migrate in a loop caused severe race conditions and locked our staging database.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500126",
+      "replyToId": null,
+      "etag": "1710685500126",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T09:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T09:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500126",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Drizzle v0.34.0 completely upgraded the migration process to handle distributed, multi-tenant environments. It now includes a status column in the __drizzle_migrations table to track applied vs. failed migrations, and it implements explicit locking mechanisms.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500127",
+      "replyToId": null,
+      "etag": "1710685500127",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T09:50:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T09:50:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500127",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Furthermore, they removed implicit transactions for migration files. We are now wrapping the generated SQL in explicit BEGIN and COMMIT statements, which prevents the deadlocks we used to see during concurrent migrations.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500128",
+      "replyToId": null,
+      "etag": "1710685500128",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T10:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T10:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500128",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>That is a massive relief. Drizzle's recent updates have been lifesavers for complex architectures.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500129",
+      "replyToId": null,
+      "etag": "1710685500129",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T10:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T10:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500129",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>User @james-holden opened Pull Request #145: feat: drizzle dynamic schema routing</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500130",
+      "replyToId": null,
+      "etag": "1710685500130",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T10:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T10:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500130",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Reviewing the PR. I see you are utilizing the $dynamic() mode for the query builders.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500131",
+      "replyToId": null,
+      "etag": "1710685500131",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T10:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T10:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500131",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Yes. Because we are building dynamic tenant routes, standard query building strictly restricts invoking methods like .where() multiple times. The $dynamic() mode allows us to pass the query builder through a shared middleware function to append tenant-specific contexts, pagination, and RBAC filters dynamically on the fly.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500132",
+      "replyToId": null,
+      "etag": "1710685500132",
+      "messageType": "message",
+      "createdDateTime": "2026-03-18T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-18T11:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500132",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>It is incredibly elegant. Approved and merged.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500133",
+      "replyToId": null,
+      "etag": "1710685500133",
+      "messageType": "message",
+      "createdDateTime": "2026-03-20T14:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-20T14:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500133",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Update: The custom SCIM middleware is deployed to the staging cluster. Globex IT is running their provisioning test now.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500134",
+      "replyToId": null,
+      "etag": "1710685500134",
+      "messageType": "message",
+      "createdDateTime": "2026-03-20T15:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-20T15:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500134",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Testing complete. SAML SSO is successful. The proprietary directory sync is successfully intercepted, transformed, and users are provisioning perfectly into Auth0.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500135",
+      "replyToId": null,
+      "etag": "1710685500135",
+      "messageType": "message",
+      "createdDateTime": "2026-03-20T15:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-20T15:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500135",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Fantastic! I just received confirmation from their procurement officer. They are executing the contract today.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500136",
+      "replyToId": null,
+      "etag": "1710685500136",
+      "messageType": "message",
+      "createdDateTime": "2026-03-20T16:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-20T16:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500136",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Huge win, team. Thank you for holding the line on security, Elena, and incredible work on the custom integration, Chloe.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500137",
+      "replyToId": null,
+      "etag": "1710685500137",
+      "messageType": "message",
+      "createdDateTime": "2026-03-20T16:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-20T16:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500137",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Outstanding effort. I am officially marking the Phase 2 IAM Migration milestone as COMPLETE. We are now 100% focused on Phase 3: Database Restructuring, which is already underway.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500138",
+      "replyToId": null,
+      "etag": "1710685500138",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500138",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Tracking Phase 3 schema generation | 🚧 None | ⏭️ Preparing data synchronization pipeline.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500139",
+      "replyToId": null,
+      "etag": "1710685500139",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500139",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Running Drizzle multi-schema generator against staging database | 🚧 Investigating Drizzle-kit bug | ⏭️ Executing WAL data sync.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500140",
+      "replyToId": null,
+      "etag": "1710685500140",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500140",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>James, I saw your status blocker. What is the Drizzle-kit bug?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500141",
+      "replyToId": null,
+      "etag": "1710685500141",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T09:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T09:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500141",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Drizzle-kit generate is succeeding, but it is generating invalid SQL for the tags column, which defaults to an empty array. It is throwing a Postgres error: column is of type integer but default expression is of type integer.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500142",
+      "replyToId": null,
+      "etag": "1710685500142",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T09:55:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T09:55:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500142",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Ah, yes. I recall seeing an active issue about that on the Drizzle GitHub repository. It is a known bug with Postgres array defaults in certain minor versions.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500143",
+      "replyToId": null,
+      "etag": "1710685500143",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T10:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T10:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500143",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I am going to write a script to manually patch the generated SQL migration file to DEFAULT '{}'::integer via Regex before running the push command to the database.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500144",
+      "replyToId": null,
+      "etag": "1710685500144",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T10:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T10:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500144",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>That workaround is perfectly fine. Just make sure to document the manual override in the README so our CI/CD pipeline doesn't overwrite it on the next automatic generation.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500145",
+      "replyToId": null,
+      "etag": "1710685500145",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T11:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500145",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Documented. Manual patch applied successfully. Executing the migrations across the cluster...</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500146",
+      "replyToId": null,
+      "etag": "1710685500146",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T11:14:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T11:14:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500146",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Migrations applied successfully across all 412 active tenant schemas.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500147",
+      "replyToId": null,
+      "etag": "1710685500147",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T11:18:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T11:18:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500147",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>412 separate, fully defined relational schemas generated and migrated already?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500148",
+      "replyToId": null,
+      "etag": "1710685500148",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T11:22:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T11:22:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500148",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>The script executed in approximately 14 minutes. We now have complete logical separation of data. I am initiating the parallel data synchronization to move the historical rows from the shared monolithic schema into the isolated tenant schemas.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500149",
+      "replyToId": null,
+      "etag": "1710685500149",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T11:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T11:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500149",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Reminder to all engineering staff: we must maintain this parallel run state until absolute data integrity is cryptographically verified. Do not sever the monolithic database connection or alter the application connection strings yet.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500150",
+      "replyToId": null,
+      "etag": "1710685500150",
+      "messageType": "message",
+      "createdDateTime": "2026-03-23T11:35:00.000Z",
+      "lastModifiedDateTime": "2026-03-23T11:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500150",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Agreed. The sync script is utilizing PostgreSQL Write-Ahead Logging (WAL) to replicate the data in real-time without locking tables. We will run it for 48 hours to ensure zero data drift before cutting over.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 Own data connector, preprocessing, chunking, and indexing workflows for knowledge ingestion.
 
 ## Responsibilities
-- Integrate source connectors (Teams, SharePoint, Jira).
+- Integrate source connectors (active: local static chat/doc; paused: Teams/SharePoint/Jira APIs).
 - Handle full backfill and incremental updates.
 - Normalize content and preserve meaningful structure.
 - Produce chunked, metadata-rich artifacts for embedding/indexing.
@@ -19,8 +19,8 @@ Own data connector, preprocessing, chunking, and indexing workflows for knowledg
 | --- | --- | --- | --- |
 | `CONTEXT.md` | Folder context and change tracking | `docs/AGENTS.md`, ingestion docs | Active |
 | `__init__.py` | Ingestion package marker | Python runtime | Active |
-| `connectors.py` | Connector base class and deterministic source document fetchers | `app/models/enums.py`, `app/models/ingestion_models.py`, `app/core/logger.py` | Active |
-| `indexing_pipeline.py` | Pipeline orchestration for connector fetch + chunk/index command flow | `app/ingestion/connectors.py`, `app/commands/run_ingestion_indexing_command.py` | Active |
+| `connectors.py` | Connector base class plus local static file connectors (`LocalChatDataConnector`, `LocalDocumentsConnector`); integration connectors retained but not default wired | `app/models/enums.py`, `app/models/ingestion_models.py`, `app/core/logger.py`, `app/core/config.py`, `urllib`, `pathlib`, `zipfile`, `xml.etree` | Active |
+| `indexing_pipeline.py` | Pipeline orchestration for connector fetch + chunk/index command flow with static connectors as default path | `app/ingestion/connectors.py`, `app/commands/run_ingestion_indexing_command.py` | Active |
 | `automation.py` | Background scheduler and lifecycle runtime for auto-ingestion | `app/ingestion/indexing_pipeline.py`, `app/models/enums.py`, `app/core/logger.py`, `threading` | Active |
 
 ## Auth Note
@@ -29,6 +29,8 @@ Authentication is intentionally deferred. Implement auth only after explicit use
 ## Change Log
 | Date | Change | Files | Notes |
 | --- | --- | --- | --- |
+| 2026-03-18 | Switched default ingestion source to static local chat/doc files | `connectors.py`, `indexing_pipeline.py` | Added explicit comments explaining paused integration wiring and introduced active local connectors for `app/data/chat_data` + `app/data/documents` |
+| 2026-03-18 | Implemented mixed-mode Teams Graph connector with env-based switching | `connectors.py` | Added app-token Graph fetch path for channel-specific and all-channel modes with seed fallback and normalized message ingestion |
 | 2026-03-18 | Added ingestion-to-retrieval shared index integration | `indexing_pipeline.py` | Pipeline-indexed chunks are now consumed by retriever via shared core index store |
 | 2026-03-18 | Added automatic ingestion scheduler runtime | `automation.py` | Added periodic ingestion scheduler and enable/disable runtime wrapper with structured logging |
 | 2026-03-18 | Implemented ingestion indexing pipeline orchestration | `indexing_pipeline.py`, `connectors.py` | Added connector fetch normalization and end-to-end pipeline execution with structured logs |

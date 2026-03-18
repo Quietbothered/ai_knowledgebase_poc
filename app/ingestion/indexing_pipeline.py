@@ -4,7 +4,14 @@ from __future__ import annotations
 
 from app.commands.run_ingestion_indexing_command import RunIngestionIndexingCommand
 from app.core.logger import ATHENA_LOGGER
-from app.ingestion.connectors import BaseConnector, JiraConnector, SharePointConnector, TeamsConnector
+from app.ingestion.connectors import (
+    BaseConnector,
+    JiraConnector,
+    LocalChatDataConnector,
+    LocalDocumentsConnector,
+    SharePointConnector,
+    TeamsConnector,
+)
 from app.models.enums import ConnectorMode
 from app.models.ingestion_models import IngestionIndexingResult, RunIngestionIndexingInput
 
@@ -17,7 +24,13 @@ class IngestionIndexingPipeline:
         connectors: list[BaseConnector] | None = None,
         run_command: RunIngestionIndexingCommand | None = None,
     ) -> None:
-        self._connectors = connectors or [TeamsConnector(), SharePointConnector(), JiraConnector()]
+        # NOTE:
+        # Integrations with Teams/SharePoint/Jira are intentionally paused for now.
+        # We keep their connector implementations in the repository for future reactivation.
+        # Until that point, the active default path is static local data ingestion.
+        #
+        # self._connectors = connectors or [TeamsConnector(), SharePointConnector(), JiraConnector()]
+        self._connectors = connectors or [LocalChatDataConnector(), LocalDocumentsConnector()]
         self._run_command = run_command or RunIngestionIndexingCommand()
 
     def run(

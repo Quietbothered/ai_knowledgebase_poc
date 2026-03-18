@@ -1,0 +1,1956 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/messages",
+  "@odata.count": 50,
+  "value": [
+    {
+      "id": "1710685500201",
+      "replyToId": null,
+      "etag": "1710685500201",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500201",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@channel Phase 5: Quality Assurance is officially active. We need a complete execution of the end-to-end Cypress regression suite against the staging environment today.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500202",
+      "replyToId": null,
+      "etag": "1710685500202",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500202",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Triggering the CI/CD pipeline for the Cypress test suite now. It will simulate 500 distinct user journeys across the extracted analytics engine and the legacy proxy routes.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500203",
+      "replyToId": null,
+      "etag": "1710685500203",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T09:45:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T09:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "high",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500203",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>❌ Action Failed: `test-cypress-e2e`. 14 tests failed, 486 passed.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500204",
+      "replyToId": null,
+      "etag": "1710685500204",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T09:50:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T09:50:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500204",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Reviewing the trace logs. It looks like all 14 failures are related to session timeouts on long-running report generations. The Auth0 JWT is expiring before the Puppeteer proxy can finish rendering the PDF.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500205",
+      "replyToId": null,
+      "etag": "1710685500205",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T10:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T10:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500205",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>We need to implement Silent Authentication and Refresh Token Rotation in the Auth0 Next.js SDK. Right now, it's just using a static 15-minute access token.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500206",
+      "replyToId": null,
+      "etag": "1710685500206",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T10:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T10:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500206",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I'll pair with you on that, Chloe. We can configure the Axios interceptors to automatically request a new token via the `/api/auth/token` route if it detects a 401 response from the microservice.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500207",
+      "replyToId": null,
+      "etag": "1710685500207",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T11:30:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T11:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500207",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Refresh token rotation is implemented and pushed to staging. The client now gracefully refreshes the session in the background without dropping the user's state.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500208",
+      "replyToId": null,
+      "etag": "1710685500208",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T11:45:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T11:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500208",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Re-running the Cypress suite now.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500209",
+      "replyToId": null,
+      "etag": "1710685500209",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T12:30:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T12:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500209",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>✅ Action Successful: `test-cypress-e2e`. 500 tests passed.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500210",
+      "replyToId": null,
+      "etag": "1710685500210",
+      "messageType": "message",
+      "createdDateTime": "2026-04-03T12:35:00.000Z",
+      "lastModifiedDateTime": "2026-04-03T12:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500210",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Beautiful. That clears the functional QA gate. Moving to security and penetration testing.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500211",
+      "replyToId": null,
+      "etag": "1710685500211",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500211",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Running automated vulnerability scanning for SOC2 | 🚧 None | ⏭️ Documenting Go-Live runbook.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500212",
+      "replyToId": null,
+      "etag": "1710685500212",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500212",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I have initiated Snyk and OWASP ZAP scans against the new Node.js microservice repositories and the Next.js presentation layer.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500213",
+      "replyToId": null,
+      "etag": "1710685500213",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T11:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500213",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Snyk found a medium severity vulnerability: Regular Expression Denial of Service (ReDoS) in one of our third-party logging libraries used in the analytics engine.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500214",
+      "replyToId": null,
+      "etag": "1710685500214",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T11:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T11:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500214",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I'll handle that. Dependabot should have already generated a PR to bump the semantic version. Let me check GitHub.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500215",
+      "replyToId": null,
+      "etag": "1710685500215",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T11:20:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T11:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500215",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>User @david-chen merged Pull Request #210: `chore(deps): bump winston from 3.10.0 to 3.13.0`</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500216",
+      "replyToId": null,
+      "etag": "1710685500216",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T11:25:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T11:25:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500216",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Re-running the Snyk pipeline. ... Clean. Vulnerability cleared. The OWASP ZAP dynamic application security testing (DAST) also came back clean, confirming our API Gateway properly enforces JWT validation on all endpoints.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500217",
+      "replyToId": null,
+      "etag": "1710685500217",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T13:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T13:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500217",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Elena, I have the Globex procurement team asking for an updated SOC 2 Type II attestation before they finalize the PO. Can we provide a clean security posture report based on these scans?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500218",
+      "replyToId": null,
+      "etag": "1710685500218",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T13:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T13:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500218",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Yes. I am generating the executive summary of the penetration and vulnerability scans now. It proves the architecture enforces strict multi-tenant isolation and cryptographic standards. I will email it to you in 10 minutes.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500219",
+      "replyToId": null,
+      "etag": "1710685500219",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T13:30:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T13:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500219",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Globex will be thrilled. This essentially unblocks their security compliance committee.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500220",
+      "replyToId": null,
+      "etag": "1710685500220",
+      "messageType": "message",
+      "createdDateTime": "2026-04-06T14:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-06T14:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500220",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@channel We have passed functional QA and security gates. I am scheduling the formal Go/No-Go meeting for tomorrow morning to review the cutover runbook.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500221",
+      "replyToId": null,
+      "etag": "1710685500221",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500221",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Reviewing the cutover runbook. Step 4 indicates severing the monolith's connection to the legacy database cluster. Are we implementing a hard maintenance window for this?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500222",
+      "replyToId": null,
+      "etag": "1710685500222",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500222",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Yes. To guarantee zero data loss, we need a 30-minute maintenance window. During this time, we will block all incoming API traffic, run the final WAL (Write-Ahead Logging) flush to sync any last-second transactions to the new isolated schemas, and then update the API Gateway targets.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500223",
+      "replyToId": null,
+      "etag": "1710685500223",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500223",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>A 30-minute downtime window is approved, provided we execute it during our lowest traffic period. Let's schedule the cutover for Friday at 11:00 PM EST.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500224",
+      "replyToId": null,
+      "etag": "1710685500224",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T09:45:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T09:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500224",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I will be on standby to monitor the Auth0 Trickle Migration switch. When we throw the switch, the legacy Clerk database will be fully deprecated, and any remaining non-migrated users will be forced through a password reset flow via Auth0.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500225",
+      "replyToId": null,
+      "etag": "1710685500225",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T10:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T10:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500225",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I'll be handling the Route 53 DNS propagation and updating the CloudFront origins to point to the new API Gateway.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500226",
+      "replyToId": null,
+      "etag": "1710685500226",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T10:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T10:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500226",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Let's initiate the formal Go/No-Go vote based on the runbook and QA results. Sarah, as product owner, what is your vote?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500227",
+      "replyToId": null,
+      "etag": "1710685500227",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T10:17:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T10:17:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500227",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Go. We need this live to close out Q2 deals.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500228",
+      "replyToId": null,
+      "etag": "1710685500228",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T10:18:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T10:18:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500228",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Go. Engineering is confident in the rollback plan if things go sideways.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500229",
+      "replyToId": null,
+      "etag": "1710685500229",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T10:20:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T10:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500229",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Go. Globex is waiting.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500230",
+      "replyToId": null,
+      "etag": "1710685500230",
+      "messageType": "message",
+      "createdDateTime": "2026-04-07T10:25:00.000Z",
+      "lastModifiedDateTime": "2026-04-07T10:25:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500230",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Approved. The production cutover runbook is officially greenlit for execution this Friday at 11:00 PM EST. Get some rest, team. Friday will be a long night.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500231",
+      "replyToId": null,
+      "etag": "1710685500231",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T22:45:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T22:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500231",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@channel The deployment bridge is open. T-minus 15 minutes to production cutover.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500232",
+      "replyToId": null,
+      "etag": "1710685500232",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T22:50:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T22:50:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500232",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I am online. Ready when you are.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500233",
+      "replyToId": null,
+      "etag": "1710685500233",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500233",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Executing Step 1: Initiating application maintenance mode. The load balancer is now returning 503 Service Unavailable to all inbound client traffic.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500234",
+      "replyToId": null,
+      "etag": "1710685500234",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:01:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:01:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "high",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500234",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-datadog-bot",
+          "displayName": "Datadog_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🚨 ALERT: API Request Volume dropped to 0 req/sec. HTTP 503 rate spiked to 100%.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500235",
+      "replyToId": null,
+      "etag": "1710685500235",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:05:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500235",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Step 2: Database connections severed. The legacy monolith is now isolated. Initiating the final WAL data synchronization sequence to flush the last delta records into the new Drizzle schemas.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500236",
+      "replyToId": null,
+      "etag": "1710685500236",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500236",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Step 3: WAL flush is complete. Cryptographic checksums verify zero data drift between the legacy monolith tables and the new multi-tenant architecture. Data replication is successful.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500237",
+      "replyToId": null,
+      "etag": "1710685500237",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:18:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:18:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500237",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Step 4: Executing IAM switch. I am updating the Route 53 DNS records to point `auth.apexanalytics.com` to the Auth0 Universal Login tenant. Clerk is officially deprecated.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500238",
+      "replyToId": null,
+      "etag": "1710685500238",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:22:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:22:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500238",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Step 5: Updating API Gateway. Origin target groups are being updated to forward `/api/analytics` requests to the new standalone Node.js microservices instead of the Next.js backend.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500239",
+      "replyToId": null,
+      "etag": "1710685500239",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:25:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:25:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500239",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>CloudFront cache invalidated. The new frontend static assets are deploying globally.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500240",
+      "replyToId": null,
+      "etag": "1710685500240",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:30:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500240",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Step 6: Lifting application maintenance mode. Enabling load balancer traffic routing.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500241",
+      "replyToId": null,
+      "etag": "1710685500241",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:32:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:32:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "high",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500241",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-datadog-bot",
+          "displayName": "Datadog_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🟢 ALERT: API Request Volume resuming. HTTP 200 rate at 99.8%.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500242",
+      "replyToId": null,
+      "etag": "1710685500242",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:35:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500242",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I am seeing successful Auth0 login events in the Auth0 tenant stream. The SSO handshakes are succeeding.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500243",
+      "replyToId": null,
+      "etag": "1710685500243",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:40:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:40:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500243",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>The Analytics Node.js microservice is receiving and processing requests from the gateway. Average latency is hovering around 80ms. The Next.js frontend is serving cached static payloads perfectly.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500244",
+      "replyToId": null,
+      "etag": "1710685500244",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:45:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500244",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Running production smoke tests manually... PDF export via the proxy is functioning. Dynamic dashboard charts are rendering. Everything is green.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500245",
+      "replyToId": null,
+      "etag": "1710685500245",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:48:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:48:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500245",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I just logged in with my internal test account. The initial dashboard loaded practically instantly. This is a completely different platform.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500246",
+      "replyToId": null,
+      "etag": "1710685500246",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:50:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:50:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500246",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I can confirm the Globex dummy account is authenticating perfectly through their SAML integration via the custom SCIM middleware we built.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500247",
+      "replyToId": null,
+      "etag": "1710685500247",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:55:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:55:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "high",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500247",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🚨 CUTOVER COMPLETE 🚨 Welcome to the new microservices architecture.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500248",
+      "replyToId": null,
+      "etag": "1710685500248",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:56:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:56:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500248",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Incredible work, everyone. Truly. This fundamentally transforms our business capabilities and cloud cost projections.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500249",
+      "replyToId": null,
+      "etag": "1710685500249",
+      "messageType": "message",
+      "createdDateTime": "2026-04-10T23:58:00.000Z",
+      "lastModifiedDateTime": "2026-04-10T23:58:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500249",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>The lack of database connection timeout errors in the Datadog logs right now is a beautiful sight.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500250",
+      "replyToId": null,
+      "etag": "1710685500250",
+      "messageType": "message",
+      "createdDateTime": "2026-04-11T00:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-11T00:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500250",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>We will keep this deployment bridge open for another hour to monitor the early telemetry, and then we formally shift into hypercare support for the weekend. Thank you all for the flawless execution.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    }
+  ]
+}

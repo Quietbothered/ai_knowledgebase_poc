@@ -1,0 +1,1956 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/messages",
+  "@odata.count": 50,
+  "value": [
+    {
+      "id": "1710685500051",
+      "replyToId": null,
+      "etag": "1710685500051",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T11:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T11:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500051",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@david-chen I am reviewing the database tables. You mentioned tenant_id filtering is strictly application-level. Are there any legacy tables missing this column entirely?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500052",
+      "replyToId": null,
+      "etag": "1710685500052",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T11:52:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T11:52:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500052",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Yes. The legacy_billing_events table was created three years ago before we even conceptualized multi-tenancy. It relies on a complex join with the users and organizations tables to infer tenancy dynamically at runtime.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500053",
+      "replyToId": null,
+      "etag": "1710685500053",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T11:58:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T11:58:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500053",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>That is a severe liability for our migration. Drizzle's dynamic routing requires a hard tenant context to execute operations securely against the isolated schemas. If we attempt to migrate that table as-is, the data referential integrity will shatter.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500054",
+      "replyToId": null,
+      "etag": "1710685500054",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T12:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T12:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500054",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I agree. I will assign an engineer to write a pre-migration script this sprint to backfill a hard tenant_id column onto those millions of legacy records.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500055",
+      "replyToId": null,
+      "etag": "1710685500055",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T12:12:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T12:12:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500055",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Excellent. Please ensure the backfill script utilizes batched transactions. We do not want to lock the production database while it runs.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500056",
+      "replyToId": null,
+      "etag": "1710685500056",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T12:20:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T12:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500056",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I'll have a junior dev pair with me on the batching logic. We'll set the batch size to 5000 rows to keep the transaction windows minimal.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500057",
+      "replyToId": null,
+      "etag": "1710685500057",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T13:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T13:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500057",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Sarah, regarding the Clerk to Auth0 transition, do your Tier-1 enterprise prospects require immediate SCIM 2.0 directory synchronization, or is standard SAML SSO sufficient for the initial launch?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500058",
+      "replyToId": null,
+      "etag": "1710685500058",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T13:10:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T13:10:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500058",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Three of the active deals are demanding automated SCIM provisioning. Their internal IT security policies mandate that user accounts are automatically created and revoked from their central Active Directory, rather than relying on Just-In-Time (JIT) provisioning upon first login.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500059",
+      "replyToId": null,
+      "etag": "1710685500059",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T13:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T13:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500059",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Understood. I will configure the Auth0 inbound SCIM endpoints and set up the corresponding attribute mapping.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500060",
+      "replyToId": null,
+      "etag": "1710685500060",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T13:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T13:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500060",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I have completed the CI/CD pipeline audit. The 35-minute build time is driven by the monolithic repository pulling down hundreds of unused dependencies during the Docker image build phase, combined with a lack of build caching.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500061",
+      "replyToId": null,
+      "etag": "1710685500061",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T13:50:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T13:50:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500061",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>We haven't pruned the package.json in over two years.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500062",
+      "replyToId": null,
+      "etag": "1710685500062",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T13:55:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T13:55:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500062",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>To achieve an immediate velocity win, I am going to implement Turborepo for workspace management. It will intelligently cache the builds and should cut deployment times in half even before we extract the microservices.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500063",
+      "replyToId": null,
+      "etag": "1710685500063",
+      "messageType": "message",
+      "createdDateTime": "2026-03-10T14:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-10T14:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500063",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>If you can get the CI/CD builds under 15 minutes, the engineering team will be ecstatic.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500064",
+      "replyToId": null,
+      "etag": "1710685500064",
+      "messageType": "message",
+      "createdDateTime": "2026-03-11T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-11T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500064",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Finalizing Phase 1 Infrastructure Audit Document | 🚧 Waiting on Clerk API rate limit increase | ⏭️ Preparing parallel staging environments for Phase 2.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500065",
+      "replyToId": null,
+      "etag": "1710685500065",
+      "messageType": "message",
+      "createdDateTime": "2026-03-11T09:10:00.000Z",
+      "lastModifiedDateTime": "2026-03-11T09:10:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500065",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Yes, we have hit a roadblock. I am writing the Clerk bulk export scripts, but their API is rate-limiting us aggressively. We cannot extract the legacy user data fast enough.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500066",
+      "replyToId": null,
+      "etag": "1710685500066",
+      "messageType": "message",
+      "createdDateTime": "2026-03-11T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-11T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500066",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I will escalate this to our Clerk enterprise representative immediately to have the rate limits temporarily lifted for the migration window.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500067",
+      "replyToId": null,
+      "etag": "1710685500067",
+      "messageType": "message",
+      "createdDateTime": "2026-03-11T09:20:00.000Z",
+      "lastModifiedDateTime": "2026-03-11T09:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500067",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Please do. We need the bulk export complete to seed the Auth0 database before we can safely activate the Trickle Migration flow.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500068",
+      "replyToId": null,
+      "etag": "1710685500068",
+      "messageType": "message",
+      "createdDateTime": "2026-03-11T14:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-11T14:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500068",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Rate limit increase approved. They gave us a 48-hour window of unthrottled API access.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500069",
+      "replyToId": null,
+      "etag": "1710685500069",
+      "messageType": "message",
+      "createdDateTime": "2026-03-11T14:35:00.000Z",
+      "lastModifiedDateTime": "2026-03-11T14:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500069",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Executing the export scripts now.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500070",
+      "replyToId": null,
+      "etag": "1710685500070",
+      "messageType": "message",
+      "createdDateTime": "2026-03-12T10:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-12T10:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500070",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>The legacy_billing_events backfill script finished running in the staging environment. Data integrity checks passed. I recommend running this in production during the lowest traffic window this weekend.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500071",
+      "replyToId": null,
+      "etag": "1710685500071",
+      "messageType": "message",
+      "createdDateTime": "2026-03-12T10:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-12T10:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500071",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>David, please ensure a comprehensive rollback procedure is documented in Confluence before executing the backfill on production.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500072",
+      "replyToId": null,
+      "etag": "1710685500072",
+      "messageType": "message",
+      "createdDateTime": "2026-03-12T10:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-12T10:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500072",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Documented, peer-reviewed, and linked in the Jira ticket.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500073",
+      "replyToId": null,
+      "etag": "1710685500073",
+      "messageType": "message",
+      "createdDateTime": "2026-03-12T14:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-12T14:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500073",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>User @chloe-kim opened Pull Request #42: feat: auth0 universal login integration</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500074",
+      "replyToId": null,
+      "etag": "1710685500074",
+      "messageType": "message",
+      "createdDateTime": "2026-03-12T14:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-12T14:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500074",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I have stripped out the localized Clerk UI components and integrated the Auth0 Next.js SDK. We are routing all authentication to the Auth0 Universal Login page to ensure we can natively enforce adaptive MFA and strict session expiration policies.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500075",
+      "replyToId": null,
+      "etag": "1710685500075",
+      "messageType": "message",
+      "createdDateTime": "2026-03-12T14:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-12T14:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500075",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Can we ensure the Universal Login page doesn't look like a generic Auth0 prompt? It needs to maintain our brand trust.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500076",
+      "replyToId": null,
+      "etag": "1710685500076",
+      "messageType": "message",
+      "createdDateTime": "2026-03-12T14:20:00.000Z",
+      "lastModifiedDateTime": "2026-03-12T14:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500076",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Absolutely. I have injected your corporate CSS variables and logos into the Auth0 tenant configuration. The transition will be visually seamless for the end-user.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500077",
+      "replyToId": null,
+      "etag": "1710685500077",
+      "messageType": "message",
+      "createdDateTime": "2026-03-12T14:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-12T14:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500077",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@channel The Phase 1 Discovery & Infrastructure Setup deliverables are officially complete and signed off. We are formally moving into Phase 2: Auth0 Migration & Security Hardening.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500078",
+      "replyToId": null,
+      "etag": "1710685500078",
+      "messageType": "message",
+      "createdDateTime": "2026-03-13T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-13T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500078",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Coordinating SAML SSO staging tests with enterprise prospects | 🚧 None | ⏭️ Monitoring Trickle Migration success rates.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500079",
+      "replyToId": null,
+      "etag": "1710685500079",
+      "messageType": "message",
+      "createdDateTime": "2026-03-13T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-13T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500079",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Testing Auth0 Trickle Migration logic | 🚧 None | ⏭️ Configuring dummy Okta IdP for SAML validation.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500080",
+      "replyToId": null,
+      "etag": "1710685500080",
+      "messageType": "message",
+      "createdDateTime": "2026-03-13T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-13T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500080",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Decoupling Analytics API routes locally | 🚧 None | ⏭️ Deploying Turborepo configurations to CI/CD.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500081",
+      "replyToId": null,
+      "etag": "1710685500081",
+      "messageType": "message",
+      "createdDateTime": "2026-03-13T09:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-13T09:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500081",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Writing Drizzle schema generation scripts | 🚧 None | ⏭️ Monitoring production database backfill stability.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500082",
+      "replyToId": null,
+      "etag": "1710685500082",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500082",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>The weekend database backfill was a success. No downtime, and the tenant_id column is fully populated across all legacy tables.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500083",
+      "replyToId": null,
+      "etag": "1710685500083",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500083",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Great. I am initiating the SAML 2.0 integration tests using our dummy Okta enterprise account.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500084",
+      "replyToId": null,
+      "etag": "1710685500084",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "high",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500084",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-datadog-bot",
+          "displayName": "Datadog_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🚨 ALERT: Spike in 400 errors on /api/auth/callback in Staging Environment.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500085",
+      "replyToId": null,
+      "etag": "1710685500085",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T09:35:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T09:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500085",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>The SAML assertion is failing. The IdP login page displays, the user authenticates, but the Auth0 callback is rejecting the payload.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500086",
+      "replyToId": null,
+      "etag": "1710685500086",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T09:38:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T09:38:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500086",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>What is the exact error in the Auth0 tenant log?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500087",
+      "replyToId": null,
+      "etag": "1710685500087",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T09:42:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T09:42:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500087",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I pulled the HAR file and decoded the SAML response. The error is: SAML Response invalid: Signature validation failed.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500088",
+      "replyToId": null,
+      "etag": "1710685500088",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T09:48:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T09:48:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500088",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Signature validation failures almost always mean a certificate mismatch. Did the dummy Okta account rotate its x.509 signing certificate recently?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500089",
+      "replyToId": null,
+      "etag": "1710685500089",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T09:55:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T09:55:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500089",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Let me check the IdP metadata... Yes. The Public Certificate stored in our Auth0 SSO configuration is outdated. I am pasting the new x.509 certificate into the Auth0 settings now.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500090",
+      "replyToId": null,
+      "etag": "1710685500090",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T10:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T10:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500090",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Okay, signature validation passed. But now the callback is throwing a 403 error: Audience restriction validation failed.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500091",
+      "replyToId": null,
+      "etag": "1710685500091",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T10:10:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T10:10:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500091",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Audience mismatch? What is the Service Provider (SP) Entity ID expecting?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500092",
+      "replyToId": null,
+      "etag": "1710685500092",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T10:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T10:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500092",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>The SAML assertion says it is meant for the audience https://staging.apexanalytics.com/metadata, but our Auth0 SP is configured to expect urn:auth0:apex-dev:okta-dummy.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500093",
+      "replyToId": null,
+      "etag": "1710685500093",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T10:20:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T10:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500093",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Ah, that is my fault. I updated the environment variables in the staging cluster yesterday but forgot to sync the new URLs with the Auth0 Terraform provider. Pushing a fix to the IaC repository now.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500094",
+      "replyToId": null,
+      "etag": "1710685500094",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T10:35:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T10:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500094",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>User @david-chen merged Pull Request #14: fix: sync terraform auth0 environment URLs</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500095",
+      "replyToId": null,
+      "etag": "1710685500095",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T10:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T10:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500095",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Terraform applied. SAML SSO login is successful for the dummy account. The authentication flow is stable.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500096",
+      "replyToId": null,
+      "etag": "1710685500096",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T10:55:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T10:55:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500096",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>That's a huge relief. The configuration mismatch was completely preventing Auth0 from issuing the JWT tokens correctly to the client context.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500097",
+      "replyToId": null,
+      "etag": "1710685500097",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T11:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500097",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Excellent troubleshooting, team. We have our first real enterprise client, 'Globex Retail', ready to test the live SAML integration in our staging environment tomorrow morning.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500098",
+      "replyToId": null,
+      "etag": "1710685500098",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T11:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T11:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500098",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>This is a make-or-break deal. If Globex successfully authenticates via their corporate portal, they will sign the annual procurement contract this week.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500099",
+      "replyToId": null,
+      "etag": "1710685500099",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T11:25:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T11:25:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500099",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I will monitor the Datadog logs and the Auth0 tenant streams closely during their testing window.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500100",
+      "replyToId": null,
+      "etag": "1710685500100",
+      "messageType": "message",
+      "createdDateTime": "2026-03-16T11:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-16T11:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500100",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Facilitating Globex Retail SAML test | 🚧 None | ⏭️ Preparing Phase 3 kickoff.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    }
+  ]
+}

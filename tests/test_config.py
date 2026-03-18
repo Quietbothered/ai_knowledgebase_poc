@@ -22,6 +22,31 @@ def test_settings_from_env_reads_values_from_dotenv_file(tmp_path: Path) -> None
                 "AUTO_INGESTION_ENABLED=true",
                 "AUTO_INGESTION_INTERVAL_SECONDS=900",
                 "AUTO_INGESTION_MODE=incremental",
+                "TEAMS_CONNECTOR_MODE=channel_messages",
+                "TEAMS_GRAPH_ENABLED=true",
+                "TEAMS_TENANT_ID=test-tenant-id",
+                "TEAMS_CLIENT_ID=test-client-id",
+                "TEAMS_CLIENT_SECRET=test-client-secret",
+                "TEAMS_TEAM_ID=test-team-id",
+                "TEAMS_CHANNEL_ID=test-channel-id",
+                "TEAMS_GRAPH_BASE_URL=https://graph.microsoft.com/v1.0",
+                "TEAMS_PAGE_SIZE=25",
+                "TEAMS_MAX_PAGES=3",
+                "TEAMS_INCREMENTAL_LOOKBACK_SECONDS=7200",
+                "TEAMS_SOURCE_NAME=Teams Platform Channel",
+                "TEAMS_PROJECT_KEY=KB",
+                "TEAMS_CONFIDENTIALITY=internal",
+                "STATIC_CHAT_DATA_DIR=app/data/chat_data",
+                "STATIC_DOCUMENTS_DIR=app/data/documents",
+                "STATIC_PROJECT_KEY=KB",
+                "STATIC_CONFIDENTIALITY=internal",
+                "HF_LLM_ENABLED=true",
+                "HF_API_TOKEN=hf_test_token",
+                "HF_MODEL_ID=deepseek-ai/DeepSeek-R1",
+                "HF_CHAT_COMPLETION_URL=https://router.huggingface.co/v1/chat/completions",
+                "HF_TIMEOUT_SECONDS=45",
+                "HF_MAX_TOKENS=512",
+                "HF_TEMPERATURE=0.2",
             ]
         ),
         encoding="utf-8",
@@ -37,3 +62,28 @@ def test_settings_from_env_reads_values_from_dotenv_file(tmp_path: Path) -> None
     assert settings.auto_ingestion_enabled is True
     assert settings.auto_ingestion_interval_seconds == 900
     assert settings.auto_ingestion_mode == "incremental"
+    assert settings.teams_connector_mode == "channel_messages"
+    assert settings.teams_graph_enabled is True
+    assert settings.teams_tenant_id == "test-tenant-id"
+    assert settings.teams_client_id == "test-client-id"
+    assert settings.teams_client_secret == "test-client-secret"
+    assert settings.teams_team_id == "test-team-id"
+    assert settings.teams_channel_id == "test-channel-id"
+    assert settings.teams_graph_base_url == "https://graph.microsoft.com/v1.0"
+    assert settings.teams_page_size == 25
+    assert settings.teams_max_pages == 3
+    assert settings.teams_incremental_lookback_seconds == 7200
+    assert settings.teams_source_name == "Teams Platform Channel"
+    assert settings.teams_project_key == "KB"
+    assert settings.teams_confidentiality == "internal"
+    assert settings.static_chat_data_dir == "app/data/chat_data"
+    assert settings.static_documents_dir == "app/data/documents"
+    assert settings.static_project_key == "KB"
+    assert settings.static_confidentiality == "internal"
+    assert settings.hf_llm_enabled is True
+    assert settings.hf_api_token == "hf_test_token"
+    assert settings.hf_model_id == "deepseek-ai/DeepSeek-R1"
+    assert settings.hf_chat_completion_url == "https://router.huggingface.co/v1/chat/completions"
+    assert settings.hf_timeout_seconds == 45
+    assert settings.hf_max_tokens == 512
+    assert settings.hf_temperature == 0.2

@@ -1,0 +1,1989 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/messages",
+  "@odata.count": 50,
+  "value": [
+    {
+      "id": "1710685500151",
+      "replyToId": null,
+      "etag": "1710685500151",
+      "messageType": "message",
+      "createdDateTime": "2026-03-25T11:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-25T11:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "high",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500151",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-datadog-bot",
+          "displayName": "Datadog_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🟢 ALERT: Staging Database CPU utilization dropped by 45%.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500152",
+      "replyToId": null,
+      "etag": "1710685500152",
+      "messageType": "message",
+      "createdDateTime": "2026-03-25T11:50:00.000Z",
+      "lastModifiedDateTime": "2026-03-25T11:50:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500152",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Look at that telemetry. Because the analytical read queries in staging are now natively routed to the isolated schemas, the \"noisy neighbor\" contention is completely gone.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500153",
+      "replyToId": null,
+      "etag": "1710685500153",
+      "messageType": "message",
+      "createdDateTime": "2026-03-25T11:55:00.000Z",
+      "lastModifiedDateTime": "2026-03-25T11:55:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500153",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Query latency has plummeted to 95ms during the simulated peak load test. We have achieved the primary performance target.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500154",
+      "replyToId": null,
+      "etag": "1710685500154",
+      "messageType": "message",
+      "createdDateTime": "2026-03-25T12:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-25T12:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "high",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500154",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@channel 🚨 MILESTONE DELIVERED EARLY 🚨</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500155",
+      "replyToId": null,
+      "etag": "1710685500155",
+      "messageType": "message",
+      "createdDateTime": "2026-03-25T12:02:00.000Z",
+      "lastModifiedDateTime": "2026-03-25T12:02:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500155",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎉 🥳 Incredible work, team! The Phase 3 Multi-tenant Database Infrastructure Deployment has been completed, synced, and validated five days ahead of schedule!</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500156",
+      "replyToId": null,
+      "etag": "1710685500156",
+      "messageType": "message",
+      "createdDateTime": "2026-03-25T12:10:00.000Z",
+      "lastModifiedDateTime": "2026-03-25T12:10:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500156",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🚀 🔥 This is massive. The isolation strategy is working flawlessly. Outstanding execution, James.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500157",
+      "replyToId": null,
+      "etag": "1710685500157",
+      "messageType": "message",
+      "createdDateTime": "2026-03-25T12:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-25T12:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500157",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🙌 Fantastic news! This gives us incredible momentum going into the microservices extraction.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500158",
+      "replyToId": null,
+      "etag": "1710685500158",
+      "messageType": "message",
+      "createdDateTime": "2026-03-25T12:20:00.000Z",
+      "lastModifiedDateTime": "2026-03-25T12:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500158",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Because we absorbed the earlier slack time effectively and delivered this milestone early, we are in a prime position to begin Phase 4 immediately. Enjoy the weekend, team.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500159",
+      "replyToId": null,
+      "etag": "1710685500159",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500159",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Kicking off Phase 4: Microservices Extraction | 🚧 None | ⏭️ Drafting API gateway deployment documentation.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500160",
+      "replyToId": null,
+      "etag": "1710685500160",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500160",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Extracting the Analytics Engine from the Next.js API folder | 🚧 None | ⏭️ Setting up the standalone Node.js service repository.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500161",
+      "replyToId": null,
+      "etag": "1710685500161",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500161",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Verifying production WAL data replication | 🚧 None | ⏭️ Refactoring frontend data fetching to hit the new API Gateway.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500162",
+      "replyToId": null,
+      "etag": "1710685500162",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T10:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T10:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500162",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Marcus, as you extract the Analytics Engine logic, be aware that there is a legacy PDF export module deeply intertwined with the Next.js Server-Side Rendering (SSR) context.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500163",
+      "replyToId": null,
+      "etag": "1710685500163",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T10:25:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T10:25:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500163",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I see it in the codebase. It looks like it utilizes Puppeteer to spin up a headless Chromium browser, render the React component on the server, and print it to PDF.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500164",
+      "replyToId": null,
+      "etag": "1710685500164",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T10:35:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T10:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500164",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Yes. It's horrible for memory performance, but our retail clients use it daily for their end-of-month reporting. How are we migrating that specific module to the new Node.js microservice?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500165",
+      "replyToId": null,
+      "etag": "1710685500165",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T10:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T10:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500165",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Moving a Puppeteer-based headless browser rendering pipeline into a lightweight data microservice is a severe anti-pattern. A backend API should strictly return JSON data, not render visual React components.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500166",
+      "replyToId": null,
+      "etag": "1710685500166",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T10:55:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T10:55:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500166",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>But the PDF export *must* work. Can we just rewrite the PDF generator from scratch to use a pure server-side library like `pdfkit` based on the JSON payload?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500167",
+      "replyToId": null,
+      "etag": "1710685500167",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T11:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T11:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500167",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Rewriting the entire visual reporting engine to use `pdfkit` instead of React components is a massive undertaking. It would take at least three weeks of dedicated development.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500168",
+      "replyToId": null,
+      "etag": "1710685500168",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T11:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T11:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500168",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@mark-torres @sarah-jenkins We have encountered a scope deviation. The legacy PDF export functionality is tightly coupled to the monolithic UI renderer. Rewriting this entire backend service was not documented in the initial technical discovery or the SOW.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [
+        {
+          "id": 0,
+          "mentionText": "mark-torres",
+          "mentioned": {
+            "application": null,
+            "device": null,
+            "conversation": null,
+            "user": {
+              "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+              "id": "uid-mark-007",
+              "displayName": "Mark Torres",
+              "userIdentityType": "aadUser",
+              "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+            }
+          }
+        },
+        {
+          "id": 1,
+          "mentionText": "sarah-jenkins",
+          "mentioned": {
+            "application": null,
+            "device": null,
+            "conversation": null,
+            "user": {
+              "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+              "id": "uid-sarah-001",
+              "displayName": "Sarah Jenkins",
+              "userIdentityType": "aadUser",
+              "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+            }
+          }
+        }
+      ],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500169",
+      "replyToId": null,
+      "etag": "1710685500169",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T11:25:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T11:25:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500169",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>We absolutely cannot drop the PDF exports. It's a core feature tied to several enterprise contracts. You have to include it in the extraction.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500170",
+      "replyToId": null,
+      "etag": "1710685500170",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T11:35:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T11:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500170",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Mark, I understand the feature's criticality to the business. However, rewriting a proprietary rendering engine represents significant scope creep. If we absorb this three-week rewrite now, we will miss the final Go-Live date, which directly compromises the SOC 2 security compliance timeline needed for your new enterprise clients.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500171",
+      "replyToId": null,
+      "etag": "1710685500171",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T11:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T11:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500171",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Elena is right. We cannot jeopardize the overarching SOC 2 compliance timeline just to rewrite a legacy PDF exporter. What is the architectural alternative?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500172",
+      "replyToId": null,
+      "etag": "1710685500172",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T11:55:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T11:55:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500172",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>We utilize the Strangler Fig pattern exactly as intended. We extract all the heavy data processing and analytical calculations to the new microservice. We leave the legacy PDF export route *inside* the Next.js monolith for now. When a PDF is requested, the monolith simply acts as a proxy, calling the new microservice for the processed data, rendering the PDF, and returning it.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500173",
+      "replyToId": null,
+      "etag": "1710685500173",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T12:05:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T12:05:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500173",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>So the monolith survives, but just as a lightweight proxy for legacy UI rendering?</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500174",
+      "replyToId": null,
+      "etag": "1710685500174",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T12:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T12:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500174",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Exactly. It isolates the performance drain. The heavy lifting is decoupled. We will log the complete deprecation of the Puppeteer module as Technical Debt to be systematically addressed in Q3.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500175",
+      "replyToId": null,
+      "etag": "1710685500175",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T12:25:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T12:25:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500175",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-mark-007",
+          "displayName": "Mark Torres",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>That is a highly acceptable compromise. It keeps the core project on track while preserving the user functionality. Let's proceed with that architecture.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500176",
+      "replyToId": null,
+      "etag": "1710685500176",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T12:35:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T12:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500176",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Excellent. I am adding a ticket to the Technical Debt Register for the Q3 roadmap: `Deprecate legacy Next.js Puppeteer PDF export`. This ensures it doesn't get lost, but fiercely protects our current critical path.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500177",
+      "replyToId": null,
+      "etag": "1710685500177",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T12:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T12:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500177",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>User @marcus-vance created a new branch: `feat/analytics-microservice-strangler`</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500178",
+      "replyToId": null,
+      "etag": "1710685500178",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T13:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T13:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500178",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Setting up the proxy middleware in Next.js `middleware.ts` to forward specific `/api/reports` requests to the new external service.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500179",
+      "replyToId": null,
+      "etag": "1710685500179",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T13:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T13:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500179",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>I'll review the Next.js rewrite PR once it's up. Make sure the headers (especially the Auth0 JWT) are being properly forwarded in the proxy configuration.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500180",
+      "replyToId": null,
+      "etag": "1710685500180",
+      "messageType": "message",
+      "createdDateTime": "2026-03-28T13:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-28T13:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500180",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Creating the new Node/Express API repository in the monorepo workspace. Turborepo is configured to build them concurrently.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500181",
+      "replyToId": null,
+      "etag": "1710685500181",
+      "messageType": "message",
+      "createdDateTime": "2026-03-29T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-29T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500181",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Updating the frontend API clients to point to the new gateway URL. Replacing standard fetch wrappers with Axios for better interceptor management.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500182",
+      "replyToId": null,
+      "etag": "1710685500182",
+      "messageType": "message",
+      "createdDateTime": "2026-03-29T09:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-29T09:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500182",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Updating Auth0 rules to issue JWTs valid for the new API audience parameter.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500183",
+      "replyToId": null,
+      "etag": "1710685500183",
+      "messageType": "message",
+      "createdDateTime": "2026-03-29T10:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-29T10:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500183",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Got a CORS error on local dev when the frontend hits the new microservice port. `No 'Access-Control-Allow-Origin' header is present.`</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500184",
+      "replyToId": null,
+      "etag": "1710685500184",
+      "messageType": "message",
+      "createdDateTime": "2026-03-29T10:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-29T10:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500184",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Just pushed a fix to the `cors` middleware options in the Node service. Also added `OPTIONS` to the allowed methods for preflight.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500185",
+      "replyToId": null,
+      "etag": "1710685500185",
+      "messageType": "message",
+      "createdDateTime": "2026-03-29T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-29T11:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500185",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>CORS is fixed. Data is flowing through the proxy and populating the frontend charts correctly.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500186",
+      "replyToId": null,
+      "etag": "1710685500186",
+      "messageType": "message",
+      "createdDateTime": "2026-03-30T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-30T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500186",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>API Gateway routing rules are established. The Next.js frontend is now configured to fetch dynamic visual dashboards via client-side data fetching directly from the microservices, significantly reducing the server rendering load.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500187",
+      "replyToId": null,
+      "etag": "1710685500187",
+      "messageType": "message",
+      "createdDateTime": "2026-03-30T10:00:00.000Z",
+      "lastModifiedDateTime": "2026-03-30T10:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500187",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-github-bot",
+          "displayName": "GitHub_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>User @marcus-vance merged Pull Request #188: `build: finalize turborepo caching`</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500188",
+      "replyToId": null,
+      "etag": "1710685500188",
+      "messageType": "message",
+      "createdDateTime": "2026-03-30T10:15:00.000Z",
+      "lastModifiedDateTime": "2026-03-30T10:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500188",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Checking the CI/CD pipeline run... build time is down from 35 minutes to 8.5 minutes! That is incredible.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500189",
+      "replyToId": null,
+      "etag": "1710685500189",
+      "messageType": "message",
+      "createdDateTime": "2026-03-30T10:30:00.000Z",
+      "lastModifiedDateTime": "2026-03-30T10:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500189",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Turborepo is fully caching the unchanged workspace packages. Because the monolith is now stripped of its heavy backend logic, the build times have plummeted.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500190",
+      "replyToId": null,
+      "etag": "1710685500190",
+      "messageType": "message",
+      "createdDateTime": "2026-03-30T10:45:00.000Z",
+      "lastModifiedDateTime": "2026-03-30T10:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500190",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>The engineering team definitely owes you that keg, Marcus.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500191",
+      "replyToId": null,
+      "etag": "1710685500191",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T09:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500191",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Managing API Gateway deployment | 🚧 None | ⏭️ Initiating Phase 5 Quality Assurance.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500192",
+      "replyToId": null,
+      "etag": "1710685500192",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T09:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T09:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500192",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Analytics Microservice deployed to staging | 🚧 None | ⏭️ Next.js monolith successfully proxying legacy PDF data.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500193",
+      "replyToId": null,
+      "etag": "1710685500193",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T09:30:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T09:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500193",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-chloe-006",
+          "displayName": "Chloe Kim",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Validating Auth0 JWT validation at the new API Gateway | 🚧 None | ⏭️ Trickle migration is now at 85%.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500194",
+      "replyToId": null,
+      "etag": "1710685500194",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T09:45:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T09:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500194",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-james-005",
+          "displayName": "James Holden",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🎯 Frontend API integration complete | 🚧 None | ⏭️ Monitoring database connection pooling.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500195",
+      "replyToId": null,
+      "etag": "1710685500195",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T10:30:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T10:30:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "high",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500195",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-datadog-bot",
+          "displayName": "Datadog_Bot",
+          "userIdentityType": "application",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>🟢 ALERT: P95 Dashboard Load Time across staging is currently 0.82 seconds.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500196",
+      "replyToId": null,
+      "etag": "1710685500196",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T10:35:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T10:35:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500196",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-sarah-001",
+          "displayName": "Sarah Jenkins",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Sub-second load times! The decoupling worked perfectly. The presentation layer is flying.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500197",
+      "replyToId": null,
+      "etag": "1710685500197",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T10:45:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T10:45:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500197",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-marcus-004",
+          "displayName": "Marcus Vance",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>By removing the heavy server-side rendering business logic, the Next.js application is acting purely as a presentation layer.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500198",
+      "replyToId": null,
+      "etag": "1710685500198",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T11:00:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500198",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-david-003",
+          "displayName": "David Chen",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>And the API Gateway is handling the JWT validation and routing the requests to the correct Drizzle schema based on the Auth0 context. It is a beautiful, highly resilient architecture.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500199",
+      "replyToId": null,
+      "etag": "1710685500199",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T11:15:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T11:15:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500199",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>@channel The core microservices have been successfully extracted and validated in staging. We are officially preparing for Phase 5: Quality Assurance & Production Go-Live!</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    },
+    {
+      "id": "1710685500200",
+      "replyToId": null,
+      "etag": "1710685500200",
+      "messageType": "message",
+      "createdDateTime": "2026-04-02T11:20:00.000Z",
+      "lastModifiedDateTime": "2026-04-02T11:20:00.000Z",
+      "lastEditedDateTime": null,
+      "deletedDateTime": null,
+      "subject": null,
+      "summary": null,
+      "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+      "importance": "normal",
+      "locale": "en-us",
+      "webUrl": "https://teams.microsoft.com/l/message/19:8ea0e38b.../1710685500200",
+      "channelIdentity": null,
+      "policyViolation": null,
+      "eventDetail": null,
+      "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+          "id": "uid-elena-002",
+          "displayName": "Elena Rostova",
+          "userIdentityType": "aadUser",
+          "tenantId": "e61ef81e-8bd8-476a-92e8-4a62f8426fca"
+        }
+      },
+      "body": {
+        "contentType": "html",
+        "content": "<div><div>Please review the QA matrices I've added to the shared drive. We'll start regression testing tomorrow morning.</div></div>"
+      },
+      "attachments": [],
+      "mentions": [],
+      "reactions": [],
+      "messageHistory": []
+    }
+  ]
+}

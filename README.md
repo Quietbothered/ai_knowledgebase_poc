@@ -1,52 +1,54 @@
 # Knowledgebase Project
 
-Internal Knowledge Assistant backend scaffold built with FastAPI and a retrieval-first RAG pipeline.
+Internal Knowledge Assistant backend built with FastAPI and a retrieval-first RAG pipeline.
 
-## What This Project Does
+## What This Project Does (Current Mode)
 
-This project is designed to answer internal knowledge questions using retrieved source context (Teams, SharePoint, Jira) and return source-backed responses.
+The application now serves answers from **local static datasets**:
+- chat data from `app/data/chat_data/*.json`
+- document data from `app/data/documents/*.docx`
 
-Current implementation includes a working backend scaffold with:
-- strict layered architecture (`api -> services -> commands -> rag -> ingestion -> models -> core`)
-- typed Pydantic contracts
-- standardized API response envelope
-- deterministic retrieval behavior with hybrid ranking
-- ingestion indexing pipeline (connector fetch -> chunking -> indexing)
+Answer generation is wired to Hugging Face chat completions using:
+- `deepseek-ai/DeepSeek-R1`
 
 Authentication is intentionally deferred and not implemented yet.
 
+## Why Integration Code Is Commented
+
+Third-party connectors (Teams/SharePoint/Jira API integrations) are intentionally **paused** for now.
+
+You will see explicit comments in code where default wiring was switched to static connectors. Those comments exist so future maintainers understand:
+- why integration connectors are currently not active
+- why static connectors were added
+- how to re-enable integrations later without rebuilding from scratch
+
 ## How It Works
 
-High-level flow:
 1. API receives a user query.
-2. Service orchestrates the retrieval-first pipeline.
-3. RAG retriever runs deterministic hybrid ranking over indexed chunks (seed fallback when index is empty).
-4. Command builds a deterministic answer from retrieved context only.
-5. API returns a standardized response model.
-
-When no evidence is retrieved, the system returns:
-- `"I don't know based on available information"`
-
-For known project-domain queries (for example, onboarding runbooks), retrieval returns
-citations from matched chunks.
+2. Service triggers retriever + answer command.
+3. Retrieval runs over indexed chunks.
+4. Index is built from static connectors:
+   - `LocalChatDataConnector`
+   - `LocalDocumentsConnector`
+5. `GenerateAnswerCommand` calls Hugging Face DeepSeek-R1 when configured.
+6. If HF call fails (for example missing token), deterministic fallback formatting is used so the app remains available.
 
 ## Project Structure
 
 - `app/api/` FastAPI routes
-- `app/services/` orchestration services (no business logic)
-- `app/commands/` business logic via command classes
-- `app/rag/` retrieval and context assembly components
-- `app/ingestion/` connector and ingestion placeholders
-- `app/ingestion/` connectors, indexing pipeline orchestration, and auto-scheduler runtime
-- `app/logs/` runtime JSON log files
+- `app/services/` orchestration services
+- `app/commands/` business logic commands
+- `app/rag/` retrieval logic
+- `app/ingestion/` connectors + ingestion indexing pipeline
+- `app/data/` local static datasets (chat + documents)
 - `app/models/` shared Pydantic models and enums
-- `app/core/` configuration and centralized logging
-- `tests/` automated tests
-- `docs/` architecture and planning docs
+- `app/core/` configuration, logging, HF client, shared store
+- `tests/` test suite
+- `docs/` architecture/plans/guardrails
 
 ## Run This Project
 
-From project root, run these commands:
+From project root:
 
 ```bash
 python -m venv .venv
@@ -56,59 +58,35 @@ python -m pip install -e ".[dev]"
 python -m pip install uvicorn
 ```
 
-If you prefer explicit install of env-loader dependency:
-
-```bash
-python -m pip install python-decouple
-```
-
-Start the API server:
+Start server:
 
 ```bash
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-API will be available at:
+API URL:
 - `http://127.0.0.1:8000`
 
-## Logging
+## Required Setup for DeepSeek-R1
 
-- Logs are written to `app/logs/app.log` by default.
-- Logs are structured JSON lines.
-- You can override log location with:
-  - `LOG_DIR` (default: `app/logs`)
-  - `LOG_FILE_NAME` (default: `app.log`)
+Set your Hugging Face token in `.env`:
 
-## Environment Variables (`.env`)
+```dotenv
+HF_API_TOKEN=<your_hf_token>
+HF_LLM_ENABLED=true
+HF_MODEL_ID=deepseek-ai/DeepSeek-R1
+HF_CHAT_COMPLETION_URL=https://router.huggingface.co/v1/chat/completions
+```
 
-This project loads configuration from a root `.env` file using `python-decouple`.
+If `HF_API_TOKEN` is empty or invalid, the app logs an LLM failure and returns deterministic fallback output.
 
-Current keys:
-- `SERVICE_NAME`
-- `API_PREFIX`
-- `LOG_LEVEL`
-- `LOG_DIR`
-- `LOG_FILE_NAME`
-- `AUTO_INGESTION_ENABLED` (`true`/`false`)
-- `AUTO_INGESTION_INTERVAL_SECONDS` (poll interval in seconds)
-- `AUTO_INGESTION_MODE` (`full` or `incremental`)
+## Static Data Ingestion
 
-## Ingestion Indexing Pipeline (Chunking + Index Command Flow)
+Active static data folders:
+- `app/data/chat_data`
+- `app/data/documents`
 
-The ingestion pipeline currently runs deterministic seed connector data and executes:
-1. Connector fetch (Teams, SharePoint, Jira)
-2. Chunk generation (`ChunkDocumentCommand`)
-3. Index upsert (`IndexChunksCommand`)
-4. Flow summary (`RunIngestionIndexingCommand`)
-
-Indexed chunks are stored in a shared in-memory core index store and are consumed by the retriever.
-
-Automatic ingestion:
-- Scheduler is created in FastAPI lifespan startup.
-- It runs only when `AUTO_INGESTION_ENABLED=true`.
-- First run happens on startup, then repeats every `AUTO_INGESTION_INTERVAL_SECONDS`.
-
-Run it manually:
+Run indexing manually:
 
 ```bash
 python - <<'PY'
@@ -120,31 +98,67 @@ print(result.model_dump())
 PY
 ```
 
-## Manual API Testing with Swagger (FastAPI)
+## Environment Variables (`.env`)
 
-1. Start the server with `uvicorn`.
-2. Open Swagger UI: `http://127.0.0.1:8000/docs`
-3. Expand `GET /api/v1/query`.
-4. Click `Try it out`.
-5. Enter a query value (example: `Where are runbooks stored?`).
-6. Click `Execute`.
-7. Inspect the response body, status code, and schema.
+Core:
+- `SERVICE_NAME`
+- `API_PREFIX`
+- `LOG_LEVEL`
+- `LOG_DIR`
+- `LOG_FILE_NAME`
 
-You can also use ReDoc at:
+Ingestion scheduler:
+- `AUTO_INGESTION_ENABLED`
+- `AUTO_INGESTION_INTERVAL_SECONDS`
+- `AUTO_INGESTION_MODE`
+
+Static data:
+- `STATIC_CHAT_DATA_DIR`
+- `STATIC_DOCUMENTS_DIR`
+- `STATIC_PROJECT_KEY`
+- `STATIC_CONFIDENTIALITY`
+
+Hugging Face / LLM:
+- `HF_LLM_ENABLED`
+- `HF_API_TOKEN`
+- `HF_MODEL_ID`
+- `HF_CHAT_COMPLETION_URL`
+- `HF_TIMEOUT_SECONDS`
+- `HF_MAX_TOKENS`
+- `HF_TEMPERATURE`
+
+Legacy integration config (kept for future reactivation):
+- `TEAMS_*` keys remain in config but are not default pipeline sources right now.
+
+## Manual API Testing with Swagger
+
+1. Start server.
+2. Open `http://127.0.0.1:8000/docs`.
+3. Use `GET /api/v1/query`.
+4. Enter a query.
+5. Execute and inspect response.
+
+ReDoc:
 - `http://127.0.0.1:8000/redoc`
 
 ## Quick cURL Check
 
 ```bash
-curl "http://127.0.0.1:8000/api/v1/query?query=Where%20are%20runbooks%20stored%3F"
+curl "http://127.0.0.1:8000/api/v1/query?query=Summarize%20the%20proposal%20and%20chat%20decisions"
 ```
+
+## Logging
+
+- Default log file: `app/logs/app.log`
+- Logs are structured JSON lines.
 
 ## Run Tests
 
 ```bash
-pytest -q
+.venv/bin/python -m pytest -q
 ```
 
-Expected at this stage:
-- Tests pass for the initial query pipeline contract.
-- Query endpoint returns standardized response format.
+## Reference
+
+Hugging Face chat completion task docs:
+- https://huggingface.co/docs/inference-providers/tasks/chat-completion
