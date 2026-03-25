@@ -159,11 +159,11 @@ class IngestionScheduler:
                 },
             )
             
-            print(f"\n==================================================")
-            print(f"✅ INGESTION IS COMPLETED")
+            print("\n==================================================")
+            print("✅ INGESTION IS COMPLETED")
             print(f"   Documents Processed: {_safe_value(result, 'documents_processed')}")
             print(f"   Chunks Indexed: {_safe_value(result, 'chunks_indexed')}")
-            print(f"==================================================\n")
+            print("==================================================\n")
             
             return result
         except Exception as exc:

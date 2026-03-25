@@ -90,15 +90,15 @@ class HashTokenEmbedder:
         return [value / norm for value in vector]
 
 
-class HuggingFaceEmbedder:
-    """Generate semantic embeddings via the HuggingFace Inference API.
+class OllamaEmbedder:
+    """Generate semantic embeddings via the local Ollama API.
 
-    Uses ``sentence-transformers/all-MiniLM-L6-v2`` by default, producing
+    Uses ``all-minilm:latest`` by default, producing
     384-dimensional vectors that are drop-in compatible with the existing
     Qdrant collection configuration.
     """
 
-    def __init__(self, api_token: str, model_url: str, model_id: str, timeout: int = 60) -> None:
+    def __init__(self, api_token: str, model_url: str, model_id: str, timeout: int = 120) -> None:
         self._api_token = api_token
         self._model_url = model_url
         self._model_id = model_id
@@ -111,95 +111,78 @@ class HuggingFaceEmbedder:
         return 384
 
     def embed(self, text: str) -> list[float]:
-        """Embed a single text by calling the HuggingFace Inference API."""
+        """Embed a single text by calling the Ollama API."""
 
         ATHENA_LOGGER.info(
             module="app.core.text_embedder",
-            class_name="HuggingFaceEmbedder",
+            class_name="OllamaEmbedder",
             method="embed",
-            message="[EMBEDDER] Using REMOTE HuggingFace Inference API",
+            message="[EMBEDDER] Using REMOTE Ollama API",
             extra={"model_id": self._model_id, "text_length": len(text)},
         )
         return self.embed_many([text])[0]
 
     def embed_many(self, texts: list[str], batch_size: int = 64) -> list[list[float]]:
-        """Embed multiple texts in batches, reducing the number of API calls.
-
-        Sends up to ``batch_size`` texts per request.
-        ``{"inputs": ["text1", "text2", ...]}`` → ``[[vec1], [vec2], ...]``
-        """
+        """Embed multiple texts. Uses batch loading for /api/embed compatibility."""
 
         all_vectors: list[list[float]] = []
 
-        for batch_start in range(0, len(texts), batch_size):
-            batch = texts[batch_start : batch_start + batch_size]
+        ATHENA_LOGGER.debug(
+            module="app.core.text_embedder",
+            class_name="OllamaEmbedder",
+            method="embed_many",
+            message="Ollama batch embedding started",
+            extra={
+                "model_id": self._model_id,
+                "text_count": len(texts),
+            },
+        )
+
+        for i in range(0, len(texts), batch_size):
+            batch = texts[i:i + batch_size]
             try:
-                ATHENA_LOGGER.debug(
-                    module="app.core.text_embedder",
-                    class_name="HuggingFaceEmbedder",
-                    method="embed_many",
-                    message="HuggingFace batch embedding started",
-                    extra={
-                        "model_id": self._model_id,
-                        "batch_size": len(batch),
-                        "batch_start": batch_start,
-                    },
-                )
-
-                response = httpx.post(
-                    url=self._model_url,
-                    headers={
-                        "Authorization": f"Bearer {self._api_token}",
-                        "Content-Type": "application/json",
-                    },
-                    json={"inputs": batch},
-                    timeout=self._timeout,
-                )
-                response.raise_for_status()
-
-                payload: Any = response.json()
-                batch_vectors = self._parse_batch_vectors(payload, expected_count=len(batch))
-                all_vectors.extend(batch_vectors)
-
-                ATHENA_LOGGER.debug(
-                    module="app.core.text_embedder",
-                    class_name="HuggingFaceEmbedder",
-                    method="embed_many",
-                    message="HuggingFace batch embedding completed",
-                    extra={"model_id": self._model_id, "vectors_returned": len(batch_vectors)},
-                )
+                # Modern Ollama (/api/embed) supports batching via 'input' list.
+                # Legacy Ollama (/api/embeddings) only supports 'prompt' string.
+                if self._model_url.endswith("/api/embed"):
+                    response = httpx.post(
+                        url=self._model_url,
+                        headers={"Content-Type": "application/json"},
+                        json={"model": self._model_id, "input": batch},
+                        timeout=self._timeout,
+                    )
+                    response.raise_for_status()
+                    payload = response.json()
+                    if isinstance(payload, dict) and "embeddings" in payload:
+                        all_vectors.extend([[float(v) for v in vec] for vec in payload["embeddings"]])
+                    else:
+                        raise ValueError(f"Unexpected Ollama /api/embed response: {type(payload)}")
+                else:
+                    # Legacy fallback: loop and call /api/embeddings for each text.
+                    for text in batch:
+                        response = httpx.post(
+                            url=self._model_url,
+                            headers={"Content-Type": "application/json"},
+                            json={"model": self._model_id, "prompt": text},
+                            timeout=self._timeout,
+                        )
+                        response.raise_for_status()
+                        payload = response.json()
+                        if isinstance(payload, dict) and "embedding" in payload:
+                            all_vectors.append([float(v) for v in payload["embedding"]])
+                        else:
+                            raise ValueError(f"Unexpected Ollama /api/embeddings response: {type(payload)}")
 
             except Exception as exc:
                 ATHENA_LOGGER.error(
                     module="app.core.text_embedder",
-                    class_name="HuggingFaceEmbedder",
+                    class_name="OllamaEmbedder",
                     method="embed_many",
-                    message="HuggingFace batch embedding failed",
-                    extra={"model_id": self._model_id, "error": str(exc), "batch_start": batch_start},
+                    message="Ollama embedding failed",
+                    extra={"model_id": self._model_id, "url": self._model_url, "error": str(exc)},
                 )
-                raise Exception(f"[HuggingFaceEmbedder.embed_many] {str(exc)}") from exc
+                raise Exception(f"[OllamaEmbedder.embed_many] {str(exc)}") from exc
 
         return all_vectors
-
-    @staticmethod
-    def _parse_batch_vectors(payload: Any, expected_count: int) -> list[list[float]]:
-        """Parse batch response: list of embedding vectors, one per input text.
-
-        The /pipeline/feature-extraction endpoint returns ``[[v1, v2, ...], [v1, v2, ...]]``
-        when given a list of inputs.
-        """
-
-        if (
-            isinstance(payload, list)
-            and len(payload) == expected_count
-            and all(isinstance(row, list) for row in payload)
-        ):
-            return [[float(v) for v in row] for row in payload]
-
-        raise ValueError(
-            f"Unexpected batch embedding response shape — "
-            f"expected list of {expected_count} vectors, got: {type(payload)}"
-        )
 
 
     @staticmethod
@@ -242,29 +225,30 @@ class HuggingFaceEmbedder:
                 return [float(v) for v in data[0]["embedding"]]
 
         raise ValueError(
-            f"Unexpected HuggingFace embedding response shape: {type(payload)}"
+            f"Unexpected embedding response shape: {type(payload)}"
         )
 
 
-def build_text_embedder(settings: Settings) -> HuggingFaceEmbedder | HashTokenEmbedder:
+def build_text_embedder(settings: Settings) -> OllamaEmbedder | HashTokenEmbedder:
     """Build the active text embedder from settings.
 
-    Returns ``HuggingFaceEmbedder`` when ``HF_API_TOKEN`` is configured,
+    Returns ``OllamaEmbedder`` when configured,
     otherwise falls back to ``HashTokenEmbedder`` with a logged warning.
     """
 
-    if settings.hf_api_token:
+    if settings.ollama_embedding_url:
         ATHENA_LOGGER.info(
             module="app.core.text_embedder",
             class_name="EmbedderFactory",
             method="build_text_embedder",
-            message="Using HuggingFace Inference API embedder",
-            extra={"model_id": settings.hf_embedding_model_id},
+            message="Using Ollama API embedder",
+            extra={"model_id": settings.ollama_embedding_model_id},
         )
-        return HuggingFaceEmbedder(
-            api_token=settings.hf_api_token,
-            model_url=settings.hf_embedding_url,
-            model_id=settings.hf_embedding_model_id,
+        return OllamaEmbedder(
+            api_token=settings.ollama_api_token,
+            model_url=settings.ollama_embedding_url,
+            model_id=settings.ollama_embedding_model_id,
+            timeout=settings.ollama_timeout_seconds,
         )
 
     ATHENA_LOGGER.warning(
@@ -272,12 +256,12 @@ def build_text_embedder(settings: Settings) -> HuggingFaceEmbedder | HashTokenEm
         class_name="EmbedderFactory",
         method="build_text_embedder",
         message=(
-            "HF_API_TOKEN is not set — falling back to HashTokenEmbedder. "
-            "Set HF_API_TOKEN in .env to enable semantic embeddings."
+            "OLLAMA_EMBEDDING_URL is not set — falling back to HashTokenEmbedder. "
+            "Set it in .env to enable semantic embeddings."
         ),
         extra={"fallback": "HashTokenEmbedder", "dimension": settings.vector_db_dimension},
     )
     return HashTokenEmbedder(dimension=settings.vector_db_dimension)
 
 
-TEXT_EMBEDDER: HuggingFaceEmbedder | HashTokenEmbedder = build_text_embedder(settings=SETTINGS)
+TEXT_EMBEDDER: OllamaEmbedder | HashTokenEmbedder = build_text_embedder(settings=SETTINGS)

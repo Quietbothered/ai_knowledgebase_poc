@@ -48,7 +48,7 @@ class _UrllibJsonHttpTransport:
         for attempt in range(1, _MAX_RETRIES + 2):  # attempts: 1..4 (3 retries + 1 final)
             try:
                 ATHENA_LOGGER.debug(
-                    module="app.core.huggingface_client",
+                    module="app.core.ollama_client",
                     class_name="_UrllibJsonHttpTransport",
                     method="post_json",
                     message="JSON POST request started",
@@ -63,7 +63,7 @@ class _UrllibJsonHttpTransport:
 
                 if response.status_code in _RETRYABLE_STATUS_CODES and attempt <= _MAX_RETRIES:
                     ATHENA_LOGGER.warning(
-                        module="app.core.huggingface_client",
+                        module="app.core.ollama_client",
                         class_name="_UrllibJsonHttpTransport",
                         method="post_json",
                         message=(
@@ -80,7 +80,7 @@ class _UrllibJsonHttpTransport:
                 response.raise_for_status()
                 decoded: dict[str, Any] = response.json()
                 ATHENA_LOGGER.debug(
-                    module="app.core.huggingface_client",
+                    module="app.core.ollama_client",
                     class_name="_UrllibJsonHttpTransport",
                     method="post_json",
                     message="JSON POST request completed",
@@ -92,7 +92,7 @@ class _UrllibJsonHttpTransport:
                 last_exc = exc
                 if attempt <= _MAX_RETRIES:
                     ATHENA_LOGGER.warning(
-                        module="app.core.huggingface_client",
+                        module="app.core.ollama_client",
                         class_name="_UrllibJsonHttpTransport",
                         method="post_json",
                         message=(
@@ -105,7 +105,7 @@ class _UrllibJsonHttpTransport:
                     wait *= 2
                 else:
                     ATHENA_LOGGER.error(
-                        module="app.core.huggingface_client",
+                        module="app.core.ollama_client",
                         class_name="_UrllibJsonHttpTransport",
                         method="post_json",
                         message="JSON POST request failed after all retries",
@@ -116,7 +116,7 @@ class _UrllibJsonHttpTransport:
         raise Exception(f"[_UrllibJsonHttpTransport.post_json] {str(last_exc)}") from cause
 
 
-class HuggingFaceChatClient:
+class OllamaChatClient:
     """Client to call Hugging Face chat completion endpoint."""
 
     def __init__(
@@ -132,17 +132,16 @@ class HuggingFaceChatClient:
 
         try:
             ATHENA_LOGGER.info(
-                module="app.core.huggingface_client",
-                class_name="HuggingFaceChatClient",
+                module="app.core.ollama_client",
+                class_name="OllamaChatClient",
                 method="generate_answer",
-                message="Hugging Face answer generation started",
+                message="Ollama native answer generation started",
                 extra={
-                    "model_id": self._settings.hf_model_id,
+                    "model_id": self._settings.ollama_model_id,
                     "context_chunks": len(context_chunks),
                 },
             )
-            if not self._settings.hf_api_token.strip():
-                raise ValueError("HF_API_TOKEN is required for Hugging Face API calls")
+            # Ollama does not require an API token for local unsecured instances
 
             context_block = "\n\n".join(context_chunks)
             user_message = (
@@ -155,7 +154,7 @@ class HuggingFaceChatClient:
                 f"Context:\n{context_block}"
             )
             payload: dict[str, Any] = {
-                "model": self._settings.hf_model_id,
+                "model": self._settings.ollama_model_id,
                 "messages": [
                     {
                         "role": "system",
@@ -169,35 +168,29 @@ class HuggingFaceChatClient:
                     },
                     {"role": "user", "content": user_message},
                 ],
-                "max_tokens": self._settings.hf_max_tokens,
-                "temperature": self._settings.hf_temperature,
+                "options": {
+                    "num_predict": self._settings.ollama_max_tokens,
+                    "temperature": self._settings.ollama_temperature,
+                },
                 "stream": False,
             }
             response = self._transport.post_json(
-                url=self._settings.hf_chat_completion_url,
+                url=self._settings.ollama_chat_completion_url,
                 headers={
-                    "Authorization": f"Bearer {self._settings.hf_api_token}",
+                    "Authorization": f"Bearer {self._settings.ollama_api_token}",
                     "Content-Type": "application/json",
                 },
                 payload=payload,
-                timeout_seconds=self._settings.hf_timeout_seconds,
+                timeout_seconds=self._settings.ollama_timeout_seconds,
             )
 
-            choices = response.get("choices", [])
-            if not isinstance(choices, list) or not choices:
-                raise ValueError("Hugging Face response did not include choices")
-
-            first_choice = choices[0]
-            if not isinstance(first_choice, dict):
-                raise ValueError("Hugging Face response choice has invalid shape")
-
-            message_payload = first_choice.get("message", {})
+            message_payload = response.get("message", {})
             if not isinstance(message_payload, dict):
-                raise ValueError("Hugging Face response message has invalid shape")
+                raise ValueError("Ollama native response message has invalid shape")
 
             content = str(message_payload.get("content", "")).strip()
             if not content:
-                # DeepSeek-R1 on the HuggingFace router often returns an empty `content`
+                # DeepSeek-R1 on the Ollama router often returns an empty `content`
                 # field and puts the full chain-of-thought in `reasoning_content` instead.
                 # We extract the final JSON block from the reasoning text so the downstream
                 # parser receives only the structured answer, not the whole monologue.
@@ -205,8 +198,8 @@ class HuggingFaceChatClient:
                 if reasoning_content:
                     extracted = self._extract_json_from_reasoning(reasoning_content)
                     ATHENA_LOGGER.info(
-                        module="app.core.huggingface_client",
-                        class_name="HuggingFaceChatClient",
+                        module="app.core.ollama_client",
+                        class_name="OllamaChatClient",
                         method="generate_answer",
                         message="[LLM] content is empty; extracted answer from reasoning_content",
                         extra={
@@ -219,22 +212,22 @@ class HuggingFaceChatClient:
                     raise ValueError("Hugging Face response content is empty")
 
             ATHENA_LOGGER.info(
-                module="app.core.huggingface_client",
-                class_name="HuggingFaceChatClient",
+                module="app.core.ollama_client",
+                class_name="OllamaChatClient",
                 method="generate_answer",
-                message="Hugging Face answer generation completed",
+                message="Ollama native answer generation completed",
                 extra={"content_length": len(content)},
             )
             return content
         except Exception as exc:
             ATHENA_LOGGER.error(
-                module="app.core.huggingface_client",
-                class_name="HuggingFaceChatClient",
+                module="app.core.ollama_client",
+                class_name="OllamaChatClient",
                 method="generate_answer",
-                message="Hugging Face answer generation failed",
-                extra={"error": str(exc), "model_id": self._settings.hf_model_id},
+                message="Ollama native answer generation failed",
+                extra={"error": str(exc), "model_id": self._settings.ollama_model_id},
             )
-            raise Exception(f"[HuggingFaceChatClient.generate_answer] {str(exc)}") from exc
+            raise Exception(f"[OllamaChatClient.generate_answer] {str(exc)}") from exc
 
     @staticmethod
     def _extract_json_from_reasoning(reasoning_text: str) -> str:

@@ -10,7 +10,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from app.commands.base_command import BaseCommand
 from app.core.config import SETTINGS
-from app.core.huggingface_client import HuggingFaceChatClient
+from app.core.ollama_client import OllamaChatClient
 from app.core.logger import ATHENA_LOGGER
 from app.models.query_models import RetrievalChunk
 from app.models.response_models import QueryAnswer
@@ -30,11 +30,11 @@ class GenerateAnswerCommand(BaseCommand[GenerateAnswerInput, QueryAnswer]):
 
     def __init__(
         self,
-        hf_client: "_HuggingFaceClientProtocol | None" = None,
-        hf_enabled: bool | None = None,
+        ollama_client: "_OllamaClientProtocol | None" = None,
+        ollama_enabled: bool | None = None,
     ) -> None:
-        self._hf_client = hf_client or HuggingFaceChatClient()
-        self._hf_enabled = SETTINGS.hf_llm_enabled if hf_enabled is None else hf_enabled
+        self._ollama_client = ollama_client or OllamaChatClient()
+        self._ollama_enabled = SETTINGS.ollama_llm_enabled if ollama_enabled is None else ollama_enabled
 
     def execute(self, input_model: GenerateAnswerInput) -> QueryAnswer:
         """Build an answer strictly from retrieved context chunks."""
@@ -85,9 +85,9 @@ class GenerateAnswerCommand(BaseCommand[GenerateAnswerInput, QueryAnswer]):
                     f"{citation} Source: {chunk.source_name}\n{citation} Excerpt: {chunk.excerpt}"
                 )
 
-            if self._hf_enabled:
+            if self._ollama_enabled:
                 try:
-                    llm_output = self._hf_client.generate_answer(
+                    llm_output = self._ollama_client.generate_answer(
                         query=input_model.query,
                         context_chunks=llm_context_chunks,
                     )
@@ -257,7 +257,7 @@ class GenerateAnswerCommand(BaseCommand[GenerateAnswerInput, QueryAnswer]):
         return without_fences.strip(), ("\n\n".join(thinkings) if thinkings else None)
 
 
-class _HuggingFaceClientProtocol(Protocol):
+class _OllamaClientProtocol(Protocol):
     """Protocol for LLM client dependency injection in tests."""
 
     def generate_answer(self, query: str, context_chunks: list[str]) -> str:

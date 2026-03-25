@@ -43,6 +43,10 @@ def test_qdrant_local_store_upsert_and_query(tmp_path) -> None:
     assert any("Local Chat Data" in match.get("source_name", "") for match in matches)
 
 
+import sys
+import pytest
+
+@pytest.mark.skipif(sys.platform == "win32", reason="Qdrant local collection deletion fails on Windows due to mmap locks")
 def test_qdrant_local_store_clear_resets_collection(tmp_path) -> None:
     """Qdrant local store clear should remove all points from collection."""
 

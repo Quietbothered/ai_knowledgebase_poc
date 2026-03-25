@@ -7,8 +7,11 @@ from pathlib import Path
 from app.core.config import Settings
 
 
-def test_settings_from_env_reads_values_from_dotenv_file(tmp_path: Path) -> None:
+def test_settings_from_env_reads_values_from_dotenv_file(tmp_path: Path, monkeypatch) -> None:
     """Settings loader should read values from a .env file search path."""
+
+    monkeypatch.delenv("OLLAMA_EMBEDDING_URL", raising=False)
+    monkeypatch.delenv("VECTOR_DB_PROVIDER", raising=False)
 
     env_file = tmp_path / ".env"
     env_file.write_text(
@@ -40,13 +43,15 @@ def test_settings_from_env_reads_values_from_dotenv_file(tmp_path: Path) -> None
                 "DATA_SCAN_DIRECTORIES=dir1,dir2",
                 "STATIC_PROJECT_KEY=KB",
                 "STATIC_CONFIDENTIALITY=internal",
-                "HF_LLM_ENABLED=true",
-                "HF_API_TOKEN=hf_test_token",
-                "HF_MODEL_ID=deepseek-ai/DeepSeek-R1",
-                "HF_CHAT_COMPLETION_URL=https://router.huggingface.co/v1/chat/completions",
-                "HF_TIMEOUT_SECONDS=45",
-                "HF_MAX_TOKENS=512",
-                "HF_TEMPERATURE=0.2",
+                "OLLAMA_LLM_ENABLED=true",
+                "OLLAMA_API_TOKEN=ollama_test_token",
+                "OLLAMA_MODEL_ID=llama3:8b",
+                "OLLAMA_CHAT_COMPLETION_URL=http://192.168.1.213:11434/api/chat",
+                "OLLAMA_TIMEOUT_SECONDS=45",
+                "OLLAMA_MAX_TOKENS=512",
+                "OLLAMA_TEMPERATURE=0.2",
+                "OLLAMA_EMBEDDING_MODEL_ID=all-minilm:latest",
+                "OLLAMA_EMBEDDING_URL=http://192.168.1.213:11434/api/embed",
                 "VECTOR_DB_PROVIDER=qdrant_local",
                 "VECTOR_DB_PATH=app/vector_db/qdrant",
                 "VECTOR_DB_COLLECTION_NAME=kb_test_vectors",
@@ -85,13 +90,15 @@ def test_settings_from_env_reads_values_from_dotenv_file(tmp_path: Path) -> None
     assert settings.data_scan_directories == ["dir1", "dir2"]
     assert settings.static_project_key == "KB"
     assert settings.static_confidentiality == "internal"
-    assert settings.hf_llm_enabled is True
-    assert settings.hf_api_token == "hf_test_token"
-    assert settings.hf_model_id == "deepseek-ai/DeepSeek-R1"
-    assert settings.hf_chat_completion_url == "https://router.huggingface.co/v1/chat/completions"
-    assert settings.hf_timeout_seconds == 45
-    assert settings.hf_max_tokens == 512
-    assert settings.hf_temperature == 0.2
+    assert settings.ollama_llm_enabled is True
+    assert settings.ollama_api_token == "ollama_test_token"
+    assert settings.ollama_model_id == "llama3:8b"
+    assert settings.ollama_chat_completion_url == "http://192.168.1.213:11434/api/chat"
+    assert settings.ollama_timeout_seconds == 45
+    assert settings.ollama_max_tokens == 512
+    assert settings.ollama_temperature == 0.2
+    assert settings.ollama_embedding_model_id == "all-minilm:latest"
+    assert settings.ollama_embedding_url == "http://192.168.1.213:11434/api/embed"
     assert settings.vector_db_provider == "qdrant_local"
     assert settings.vector_db_path == "app/vector_db/qdrant"
     assert settings.vector_db_collection_name == "kb_test_vectors"

@@ -9,7 +9,7 @@ from app.models.enums import SourceType
 from app.models.query_models import RetrievalChunk
 
 
-class _StubHuggingFaceClient:
+class _StubOllamaClient:
     def __init__(self, response_text: str, should_fail: bool = False) -> None:
         self._response_text = response_text
         self._should_fail = should_fail
@@ -22,7 +22,7 @@ class _StubHuggingFaceClient:
         self.last_query = query
         self.last_context_chunks = context_chunks
         if self._should_fail:
-            raise RuntimeError("simulated hf failure")
+            raise RuntimeError("simulated ollama failure")
         return self._response_text
 
 
@@ -41,10 +41,10 @@ def _sample_chunks() -> list[RetrievalChunk]:
     ]
 
 
-def test_generate_answer_command_uses_hf_response_when_available() -> None:
+def test_generate_answer_command_uses_ollama_response_when_available() -> None:
     """Command should use parsed HF JSON response when API call succeeds."""
 
-    client = _StubHuggingFaceClient(
+    client = _StubOllamaClient(
         response_text=json.dumps(
             {
                 "summary": "DeepSeek summary",
@@ -52,7 +52,7 @@ def test_generate_answer_command_uses_hf_response_when_available() -> None:
             }
         )
     )
-    command = GenerateAnswerCommand(hf_client=client)
+    command = GenerateAnswerCommand(ollama_client=client)
 
     output = command.execute(
         GenerateAnswerInput(
@@ -67,11 +67,11 @@ def test_generate_answer_command_uses_hf_response_when_available() -> None:
     assert client.calls == 1
 
 
-def test_generate_answer_command_falls_back_when_hf_call_fails() -> None:
+def test_generate_answer_command_falls_back_when_ollama_call_fails() -> None:
     """Command should gracefully fallback to deterministic formatting on HF errors."""
 
-    client = _StubHuggingFaceClient(response_text="", should_fail=True)
-    command = GenerateAnswerCommand(hf_client=client)
+    client = _StubOllamaClient(response_text="", should_fail=True)
+    command = GenerateAnswerCommand(ollama_client=client)
 
     output = command.execute(
         GenerateAnswerInput(query="Summarize rollout risk", retrieved_chunks=_sample_chunks())
@@ -83,11 +83,11 @@ def test_generate_answer_command_falls_back_when_hf_call_fails() -> None:
     assert client.calls == 1
 
 
-def test_generate_answer_command_disables_hf_calls_when_flag_is_off() -> None:
-    """Command should skip HF invocation entirely when hf_enabled is False."""
+def test_generate_answer_command_disables_ollama_calls_when_flag_is_off() -> None:
+    """Command should skip HF invocation entirely when ollama_enabled is False."""
 
-    client = _StubHuggingFaceClient(response_text="should-not-be-used")
-    command = GenerateAnswerCommand(hf_client=client, hf_enabled=False)
+    client = _StubOllamaClient(response_text="should-not-be-used")
+    command = GenerateAnswerCommand(ollama_client=client, ollama_enabled=False)
 
     output = command.execute(
         GenerateAnswerInput(query="Summarize rollout risk", retrieved_chunks=_sample_chunks())
@@ -97,10 +97,10 @@ def test_generate_answer_command_disables_hf_calls_when_flag_is_off() -> None:
     assert client.calls == 0
 
 
-def test_generate_answer_command_builds_citation_aware_hf_context_chunks() -> None:
+def test_generate_answer_command_builds_citation_aware_ollama_context_chunks() -> None:
     """Command should pass citation-annotated source context to HF client."""
 
-    client = _StubHuggingFaceClient(
+    client = _StubOllamaClient(
         response_text=json.dumps(
             {
                 "summary": "Structured answer",
@@ -108,7 +108,7 @@ def test_generate_answer_command_builds_citation_aware_hf_context_chunks() -> No
             }
         )
     )
-    command = GenerateAnswerCommand(hf_client=client, hf_enabled=True)
+    command = GenerateAnswerCommand(ollama_client=client, ollama_enabled=True)
 
     command.execute(
         GenerateAnswerInput(
@@ -128,7 +128,7 @@ def test_generate_answer_command_builds_citation_aware_hf_context_chunks() -> No
 def test_generate_answer_command_strips_think_and_parses_fenced_json() -> None:
     """Command should remove think/noise wrapper and parse JSON answer payload."""
 
-    client = _StubHuggingFaceClient(
+    client = _StubOllamaClient(
         response_text=(
             "<think>This is hidden reasoning.</think>\n"
             "```json\n"
@@ -139,7 +139,7 @@ def test_generate_answer_command_strips_think_and_parses_fenced_json() -> None:
             "```"
         )
     )
-    command = GenerateAnswerCommand(hf_client=client, hf_enabled=True)
+    command = GenerateAnswerCommand(ollama_client=client, ollama_enabled=True)
 
     output = command.execute(
         GenerateAnswerInput(query="What is the current cloud cost?", retrieved_chunks=_sample_chunks())
@@ -156,7 +156,7 @@ def test_generate_answer_command_strips_think_and_parses_fenced_json() -> None:
 def test_generate_answer_command_strips_think_inside_json_values() -> None:
     """Command should extract think tags even when they are illegally inside JSON values."""
 
-    client = _StubHuggingFaceClient(
+    client = _StubOllamaClient(
         response_text=json.dumps(
             {
                 "summary": "<think>Thinking about summary...</think>The summary",
@@ -164,7 +164,7 @@ def test_generate_answer_command_strips_think_inside_json_values() -> None:
             }
         )
     )
-    command = GenerateAnswerCommand(hf_client=client, hf_enabled=True)
+    command = GenerateAnswerCommand(ollama_client=client, ollama_enabled=True)
 
     output = command.execute(
         GenerateAnswerInput(query="Query", retrieved_chunks=_sample_chunks())
@@ -179,13 +179,13 @@ def test_generate_answer_command_strips_think_inside_json_values() -> None:
 def test_generate_answer_command_strips_think_in_text_fallback_mode() -> None:
     """Command should clean think tags even when output is not parseable JSON."""
 
-    client = _StubHuggingFaceClient(
+    client = _StubOllamaClient(
         response_text=(
             "<think>Ignore this chain-of-thought.</think>\n"
             "Cloud cost cannot be determined from the provided evidence."
         )
     )
-    command = GenerateAnswerCommand(hf_client=client, hf_enabled=True)
+    command = GenerateAnswerCommand(ollama_client=client, ollama_enabled=True)
 
     output = command.execute(
         GenerateAnswerInput(query="What is the current cloud cost?", retrieved_chunks=_sample_chunks())

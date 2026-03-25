@@ -41,23 +41,23 @@ class Settings(BaseModel):
     data_scan_directories: list[str] = Field(default_factory=lambda: ["chat_data", "documents"])
     static_project_key: str = Field(default="KB")
     static_confidentiality: str = Field(default="internal")
-    hf_llm_enabled: bool = Field(default=True)
-    hf_api_token: str = Field(default="")
-    hf_model_id: str = Field(default="deepseek-ai/DeepSeek-R1")
-    hf_chat_completion_url: str = Field(
-        default="https://router.huggingface.co/v1/chat/completions"
+    ollama_llm_enabled: bool = Field(default=True)
+    ollama_api_token: str = Field(default="")
+    ollama_model_id: str = Field(default="qwen3:4b")
+    ollama_chat_completion_url: str = Field(
+        default="http://localhost:11434/api/chat"
     )
-    hf_timeout_seconds: int = Field(default=60, ge=1, le=180)
-    hf_max_tokens: int = Field(default=700, ge=64, le=4096)
-    hf_temperature: float = Field(default=0.2, ge=0.0, le=2.0)
+    ollama_timeout_seconds: int = Field(default=120, ge=1, le=180, env="OLLAMA_TIMEOUT_SECONDS")
+    ollama_max_tokens: int = Field(default=700, ge=64, le=4096)
+    ollama_temperature: float = Field(default=0.2, ge=0.0, le=2.0)
     vector_db_provider: str = Field(default="qdrant_local")
     vector_db_path: str = Field(default="app/vector_db/qdrant")
     vector_db_collection_name: str = Field(default="knowledgebase_chunks")
     vector_db_dimension: int = Field(default=384, ge=16, le=4096)
     vector_db_top_k: int = Field(default=8, ge=1, le=50)
-    hf_embedding_model_id: str = Field(default="sentence-transformers/all-MiniLM-L6-v2")
-    hf_embedding_url: str = Field(
-        default="https://router.huggingface.co/hf-inference/models/sentence-transformers/all-MiniLM-L6-v2/pipeline/feature-extraction"
+    ollama_embedding_model_id: str = Field(default="all-minilm:latest")
+    ollama_embedding_url: str = Field(
+        default="http://localhost:11434/api/embeddings"
     )
 
     @classmethod
@@ -207,42 +207,42 @@ class Settings(BaseModel):
                 default=os.getenv("STATIC_CONFIDENTIALITY", "internal"),
                 cast=str,
             ),
-            hf_llm_enabled=decouple_config(
-                "HF_LLM_ENABLED",
-                default=os.getenv("HF_LLM_ENABLED", "true"),
+            ollama_llm_enabled=decouple_config(
+                "OLLAMA_LLM_ENABLED",
+                default=os.getenv("OLLAMA_LLM_ENABLED", "true"),
                 cast=bool,
             ),
-            hf_api_token=decouple_config(
-                "HF_API_TOKEN",
-                default=os.getenv("HF_API_TOKEN", ""),
+            ollama_api_token=decouple_config(
+                "OLLAMA_API_TOKEN",
+                default=os.getenv("OLLAMA_API_TOKEN", ""),
                 cast=str,
             ),
-            hf_model_id=decouple_config(
-                "HF_MODEL_ID",
-                default=os.getenv("HF_MODEL_ID", "deepseek-ai/DeepSeek-R1"),
+            ollama_model_id=decouple_config(
+                "OLLAMA_MODEL_ID",
+                default=os.getenv("OLLAMA_MODEL_ID", "qwen3:4b"),
                 cast=str,
             ),
-            hf_chat_completion_url=decouple_config(
-                "HF_CHAT_COMPLETION_URL",
+            ollama_chat_completion_url=decouple_config(
+                "OLLAMA_CHAT_COMPLETION_URL",
                 default=os.getenv(
-                    "HF_CHAT_COMPLETION_URL",
-                    "https://router.huggingface.co/v1/chat/completions",
+                    "OLLAMA_CHAT_COMPLETION_URL",
+                    "http://192.168.1.213:11434/api/chat",
                 ),
                 cast=str,
             ),
-            hf_timeout_seconds=decouple_config(
-                "HF_TIMEOUT_SECONDS",
-                default=os.getenv("HF_TIMEOUT_SECONDS", "60"),
+            ollama_timeout_seconds=decouple_config(
+                "OLLAMA_TIMEOUT_SECONDS",
+                default=os.getenv("OLLAMA_TIMEOUT_SECONDS", "60"),
                 cast=int,
             ),
-            hf_max_tokens=decouple_config(
-                "HF_MAX_TOKENS",
-                default=os.getenv("HF_MAX_TOKENS", "700"),
+            ollama_max_tokens=decouple_config(
+                "OLLAMA_MAX_TOKENS",
+                default=os.getenv("OLLAMA_MAX_TOKENS", "700"),
                 cast=int,
             ),
-            hf_temperature=decouple_config(
-                "HF_TEMPERATURE",
-                default=os.getenv("HF_TEMPERATURE", "0.2"),
+            ollama_temperature=decouple_config(
+                "OLLAMA_TEMPERATURE",
+                default=os.getenv("OLLAMA_TEMPERATURE", "0.2"),
                 cast=float,
             ),
             vector_db_provider=decouple_config(
@@ -270,19 +270,19 @@ class Settings(BaseModel):
                 default=os.getenv("VECTOR_DB_TOP_K", "8"),
                 cast=int,
             ),
-            hf_embedding_model_id=decouple_config(
-                "HF_EMBEDDING_MODEL_ID",
+            ollama_embedding_model_id=decouple_config(
+                "OLLAMA_EMBEDDING_MODEL_ID",
                 default=os.getenv(
-                    "HF_EMBEDDING_MODEL_ID",
-                    "sentence-transformers/all-MiniLM-L6-v2",
+                    "OLLAMA_EMBEDDING_MODEL_ID",
+                    "all-minilm:latest",
                 ),
                 cast=str,
             ),
-            hf_embedding_url=decouple_config(
-                "HF_EMBEDDING_URL",
+            ollama_embedding_url=decouple_config(
+                "OLLAMA_EMBEDDING_URL",
                 default=os.getenv(
-                    "HF_EMBEDDING_URL",
-                    "https://router.huggingface.co/hf-inference/models/sentence-transformers/all-MiniLM-L6-v2/pipeline/feature-extraction",
+                    "OLLAMA_EMBEDDING_URL",
+                    "http://192.168.1.213:11434/api/embeddings",
                 ),
                 cast=str,
             ),

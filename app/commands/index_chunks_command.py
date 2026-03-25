@@ -28,7 +28,7 @@ class IndexChunksCommand(BaseCommand[IndexingRequest, IndexingResult]):
             )
 
             records = [chunk.model_dump(mode="json") for chunk in input_model.chunks]
-            # Use embed_many() when available (HuggingFaceEmbedder) to batch all
+            # Use embed_many() when available (OllamaEmbedder) to batch all
             # chunks into a small number of API calls instead of N individual ones.
             texts = [chunk.text for chunk in input_model.chunks]
             if hasattr(TEXT_EMBEDDER, "embed_many"):

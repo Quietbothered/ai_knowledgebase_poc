@@ -6,10 +6,7 @@ from app.commands.run_ingestion_indexing_command import RunIngestionIndexingComm
 from app.core.logger import ATHENA_LOGGER
 from app.ingestion.connectors import (
     BaseConnector,
-    JiraConnector,
     LocalDirectoryConnector,
-    SharePointConnector,
-    TeamsConnector,
 )
 from app.models.enums import ConnectorMode
 from app.models.ingestion_models import IngestionIndexingResult, RunIngestionIndexingInput
